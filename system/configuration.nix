@@ -2,22 +2,22 @@
 
 {
   imports = [
-    ../shared/audio.nix
-    ../shared/bluetooth.nix
-    ../shared/fonts.nix
-    ../shared/hyprland.nix
-    ../shared/networking.nix
-    ../shared/options.nix
-    ../shared/programs.nix
-    ../shared/shell.nix
-    ../shared/timezone.nix
-    ../shared/user.nix
-    ../shared/virtualization.nix
+    ./audio.nix
+    ./bluetooth.nix
+    ./fonts.nix
+    ./hyprland.nix
+    ./networking.nix
+    ./options.nix
+    ./programs.nix
+    ./shell.nix
+    ./timezone.nix
+    ./user.nix
+    ./virtualization.nix
     ./hardware-configuration.nix
   ];
 
   boot = {
-    initrd.luks.devices."luks-b2a44d53-56e9-4811-944d-1cfa7e9167b3".device = "/dev/disk/by-uuid/b2a44d53-56e9-4811-944d-1cfa7e9167b3";
+    initrd.luks.devices."luks-4a9455ec-d5d9-4f6c-a619-d37de610a85a".device = "/dev/disk/by-uuid/4a9455ec-d5d9-4f6c-a619-d37de610a85a";
     loader = {
       systemd-boot.enable = true;
       efi.canTouchEfiVariables = true;

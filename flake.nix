@@ -8,43 +8,22 @@
   };
 
   outputs = { self, nixpkgs, home-manager,... }:
-
     let
-
       lib = nixpkgs.lib;
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
-
     in {
-
       nixosConfigurations = {
-
-        latitude5400 = lib.nixosSystem {
+        nixos = lib.nixosSystem {
           inherit system;
-          modules = [ ./system/latitude5400/configuration.nix ];
+          modules = [ ./system/configuration.nix ];
         };
-
-        optiplex5050 = lib.nixosSystem {
-          inherit system;
-          modules = [ ./system/optiplex5050/configuration.nix ];
-        };
-
       };
-
       homeConfigurations = {
-
-        latitude5400 = home-manager.lib.homeManagerConfiguration {
+        simone = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-          modules = [ ./user/latitude5400/home.nix ];
+          modules = [ ./user/home.nix ];
         };
-
-        optiplex5050 = home-manager.lib.homeManagerConfiguration {
-          inherit pkgs;
-          modules = [ ./user/optiplex5050/home.nix ];
-        };
-
       };
-
     };
-
 }

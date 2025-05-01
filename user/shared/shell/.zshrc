@@ -25,21 +25,22 @@ bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 
-alias -- clean-all='sudo nix-collect-garbage -d && clean-boot'
-alias -- clean-boot='sudo /run/current-system/bin/switch-to-configuration boot'
 alias -- config='nvim $HOME/.config/nixos'
 alias -- cp='cp -i'
 alias -- df='df -h'
 alias -- du='du -h'
 alias -- free='free -h'
 alias -- gpt='tgpt -m'
-alias -- home-rebuild='home-manager switch --flake ~/.config/nixos#optiplex5050'
 alias -- ln='ln -i'
 alias -- mv='mv -i'
 alias -- rm='rm -i'
-alias -- sys-rebuild='nixos-rebuild switch --flake ~/.config/nixos#optiplex5050 --use-remote-sudo'
-alias -- sys-update='nix flake update --flake ~/.config/nixos && sys-rebuild'
 alias -- vi=nvim
 alias -- vim=nvim
+
+alias -- clean-all='sudo nix-collect-garbage -d && clean-boot'
+alias -- clean-boot='sudo /run/current-system/bin/switch-to-configuration boot'
+alias -- home-rebuild='home-manager switch --flake ~/.config/nixos'
+alias -- sys-rebuild='nixos-rebuild switch --flake ~/.config/nixos --use-remote-sudo'
+alias -- sys-update='nix flake update --flake ~/.config/nixos && sys-rebuild'
 
 set -o vi
