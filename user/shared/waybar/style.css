@@ -3,8 +3,9 @@
     border-radius: 0px;
     font-family: "Fira Code Nerd Font";
     font-size: 15px;
-    min-height: 0;
-    padding: 0 2;
+    min-height: 0px;
+    padding: 0px 3px;
+    margin: 0px 0px;
 }
 
 window#waybar {
@@ -13,11 +14,23 @@ window#waybar {
 }
 
 .topbar {
-    border-bottom: 2px solid rgba(100, 114, 125, 1);
+    border-bottom: 0px solid @borders;
 }
 
 .bottombar {
-    border-top: 2px solid rgba(100, 114, 125, 1);
+    border-top: 0px solid @borders;
+}
+
+#workspaces button.active {
+  color: @theme_fg_color;
+  background: @wm_button_hover_color_a;
+  border-radius: 100px;
+  margin: 5px 4px;
+  padding: 2px 3px;
+}
+
+#workspaces button {
+  color: @theme_fg_color;
 }
 
 #battery,
@@ -33,7 +46,7 @@ window#waybar {
 #taskbar,
 #temperature,
 #tray {
-    margin: 5 5;
+    margin: 5px 5px;
     color: @theme_text_color;
 }
 

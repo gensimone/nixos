@@ -5,6 +5,7 @@
     ./audio.nix
     ./bluetooth.nix
     ./fonts.nix
+    ./hardware-configuration.nix
     ./hyprland.nix
     ./networking.nix
     ./options.nix
@@ -13,7 +14,6 @@
     ./timezone.nix
     ./user.nix
     ./virtualization.nix
-    ./hardware-configuration.nix
   ];
 
   boot = {

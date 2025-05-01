@@ -8,6 +8,7 @@
     ./shared/browser/browser.nix
     ./shared/zathura/zathura.nix
     ./shared/shell/shell.nix
+    ./shared/programs.nix
   ];
 
   home.username = "simone";
