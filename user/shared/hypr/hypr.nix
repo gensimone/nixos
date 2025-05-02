@@ -25,6 +25,5 @@
     ../rofi/rofi.nix
     ../waybar/waybar.nix
     ../mako/mako.nix
-    ../theme.nix
   ];
 }

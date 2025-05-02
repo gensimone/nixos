@@ -1,6 +1,13 @@
 { config, pkgs, ... }:
 
 {
+  home.pointerCursor = {
+    gtk.enable = true;
+    package = pkgs.bibata-cursors;
+    name = "Nordzy-cursors-white";
+    size = 16;
+  };
+
   gtk = {
     enable = true;
     theme = {
