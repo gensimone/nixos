@@ -23,39 +23,22 @@ window#waybar {
 
 #workspaces button.active {
   color: @theme_fg_color;
-  background: @wm_button_hover_color_a;
-  border-radius: 100px;
-  margin: 5px 4px;
-  padding: 2px 3px;
+  background: @wm_button_hover_color_b;
+  border-radius: 7px;
 }
 
-#workspaces button {
-  color: @theme_fg_color;
-}
-
-#battery,
-#clock,
-#cpu,
-#disk,
-#memory,
-#mode,
-#network.wifi,
-#network.ethernet,
-#network.disconnected,
-#pulseaudio,
+#bluetooth,
+#workspaces,
 #taskbar,
-#temperature,
+#idle_inhibitor,
+#clock,
+#group-power,
+#group-audio,
+#group-system-status,
 #tray {
-    margin: 5px 5px;
-    color: @theme_text_color;
-}
-
-#battery.warning:not(.charging) {
-    background: #f53c3c;
-    color: white;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: steps(12);
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  margin: 4px 5px;
+  padding: 7px 5px;
+  color: @theme_fg_color;
+  background: shade(alpha(@borders, 0.45), 1.25);
+  border-radius: 10px;
 }
