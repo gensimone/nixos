@@ -6,11 +6,11 @@
         "position": "top",
         "height": 30,
         "modules-left": [
+          "idle_inhibitor",
           "tray"
         ],
         "modules-center": [
-          "clock",
-          "idle_inhibitor"
+          "clock"
         ],
         "modules-right": [
           "disk",
@@ -29,9 +29,10 @@
         "idle_inhibitor": {
           "format": "{icon}",
           "format-icons": {
-            "activated": " ",
-            "deactivated": ""
-          }
+            "activated": "󰅶 ",
+            "deactivated": "󰾪 "
+          },
+          "start-activated": false
         },
         "clock": {
           "interval": 60,

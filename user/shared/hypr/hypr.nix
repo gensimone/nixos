@@ -17,6 +17,9 @@
     udisks               # Daemon, tools and libraries to access and manipulate disks, storage devices and technologies
   ];
 
+  # Hypr* scripts
+  xdg.configFile."hypr/scripts".source = config.lib.file.mkOutOfStoreSymlink /home/simone/.config/nixos/user/shared/hypr/scripts;
+
   imports = [
     ./hyprland/hyprland.nix
     ./hypridle/hypridle.nix
