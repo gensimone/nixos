@@ -9,7 +9,8 @@
           "tray"
         ],
         "modules-center": [
-          "clock"
+          "clock",
+          "idle_inhibitor"
         ],
         "modules-right": [
           "disk",
@@ -25,6 +26,13 @@
             "on-click": "",
             "exec": ""
         },
+        "idle_inhibitor": {
+          "format": "{icon}",
+          "format-icons": {
+            "activated": " ",
+            "deactivated": ""
+          }
+        },
         "clock": {
           "interval": 60,
           "format": "<b>{:%H:%M}</b>",
@@ -32,6 +40,7 @@
           "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
         },
         "cpu": {
+          "interval": 10,
           "format": " {usage}%",
           "tooltip": false
         },

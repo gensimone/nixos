@@ -3,9 +3,9 @@
 {
   home.pointerCursor = {
     gtk.enable = true;
-    package = pkgs.bibata-cursors;
+    package = pkgs.nordzy-cursor-theme;
     name = "Nordzy-cursors-white";
-    size = 16;
+    size = 24;
   };
 
   gtk = {
