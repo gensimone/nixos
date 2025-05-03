@@ -75,11 +75,11 @@
         // },
         "orientation": "inherit",
         "modules": [
-            "battery",
             "cpu",
             "disk",
             "memory",
-            "temperature"
+            "temperature",
+            "battery"
         ]
       },
       "cpu": {
@@ -97,7 +97,7 @@
       },
       "temperature": {
         "critical-threshold": 80,
-        "format": "{icon} {temperatureC}°C",
+        "format": "{icon} {temperatureC}°C ",
         "format-icons": [
           "",
           "",
