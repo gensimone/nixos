@@ -15,19 +15,19 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in {
       nixosConfigurations = {
-        nixos = lib.nixosSystem {
+        latitude5400 = lib.nixosSystem {
           inherit system;
           modules = [
             stylix.nixosModules.stylix
-            ./system/configuration.nix
+            ./system/machines/latitude5400/configuration.nix
           ];
         };
       };
       homeConfigurations = {
-        simone = home-manager.lib.homeManagerConfiguration {
+        work = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [
-            ./user/home.nix
+            ./user/work.nix
           ];
         };
       };
