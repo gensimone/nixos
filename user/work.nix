@@ -1,6 +1,5 @@
 { ... }:
 
-
 {
   imports = [
     ./shared/browser/browser.nix
