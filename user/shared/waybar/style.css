@@ -11,6 +11,7 @@
 window#waybar {
   background: shade(alpha(@borders, 0.45), 1.25);
   color: @theme_text_color;
+  margin: 10px 10px;
 }
 
 #workspaces button.active {

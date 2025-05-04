@@ -5,7 +5,7 @@
     enable = true;
     font = {
       name = "Fira Code Nerd Font";
-      size = 12;
+      size = 11;
     };
     themeFile = "Nord";
     settings = {

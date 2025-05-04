@@ -18,7 +18,6 @@
     pyright           # Type checker for the Python language
     python3           # High-level dynamically-typed programming language
     qbittorrent       # Featureful free software BitTorrent client
-    # rustup            # Rust toolchain installer
     syncthing         # Open Source Continuous File Synchronization
     telegram-desktop  # Telegram Desktop messaging app
     unzip             # Extraction utility for archives compressed in .zip format

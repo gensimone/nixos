@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    python312Packages.pip
     neovim
     nodejs
     lua

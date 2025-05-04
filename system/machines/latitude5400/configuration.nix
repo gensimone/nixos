@@ -5,10 +5,12 @@
     ./hardware-configuration.nix
     ../../shared/audio.nix
     ../../shared/bluetooth.nix
+    ../../shared/firewall.nix
     ../../shared/fonts.nix
     ../../shared/hyprland.nix
     ../../shared/networking.nix
     ../../shared/options.nix
+    ../../shared/power.nix
     ../../shared/programs.nix
     ../../shared/shell.nix
     ../../shared/timezone.nix
@@ -25,7 +27,7 @@
     };
   };
 
-  environment.systemPackages = with pkgs; [];
+  environment.systemPackages = with pkgs; [ ];
   environment.shellAliases = {
     sys-rebuild = "nixos-rebuild switch --flake ~/.config/nixos#latitude5400 --use-remote-sudo";
   };

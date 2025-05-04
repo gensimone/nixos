@@ -2,7 +2,7 @@ return {
   {
     'akinsho/toggleterm.nvim',
     keys = {
-      { '<leader>tt', ':ToggleTerm<cr>', mode = { 'n' }, desc = "Toggle Term" },
+      { '<leader>t', ':ToggleTerm<cr>', mode = { 'n' }, desc = "Toggle Term" },
     },
     config = function()
       function _G.set_terminal_keymaps()
