@@ -6,13 +6,14 @@
     ../../shared/bluetooth.nix
     ../../shared/firewall.nix
     ../../shared/fonts.nix
-    ../../shared/gnome.nix
+    ../../shared/keyboard.nix
     ../../shared/networking.nix
     ../../shared/options.nix
     ../../shared/programs.nix
     ../../shared/shell.nix
     ../../shared/timezone.nix
     ../../shared/user.nix
+    ../../shared/xfce.nix
     ../../shared/virtualization.nix
   ];
 
@@ -29,10 +30,6 @@
   environment.systemPackages = with pkgs; [ ];
   environment.shellAliases = {
     sys-rebuild = "nixos-rebuild switch --flake ~/.config/nixos#optiplex5050 --use-remote-sudo";
-  };
-
-  services = {
-    gvfs.enable = true;
   };
 
   # This value determines the NixOS release from which the default

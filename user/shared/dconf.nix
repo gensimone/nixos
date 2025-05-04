@@ -1,4 +1,5 @@
 # Generated via dconf2nix: https://github.com/gvolpe/dconf2nix
+# (This doesn't seem to work)
 { lib, ... }:
 
 with lib.hm.gvariant;

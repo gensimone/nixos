@@ -31,6 +31,12 @@
         };
       };
       homeConfigurations = {
+        xfce = home-manager.lib.homeManagerConfiguration {
+          inherit pkgs;
+          modules = [
+            ./user/xfce.nix
+          ];
+        };
         gnome = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [
