@@ -3,20 +3,20 @@
 {
   imports = [
     ./shared/browser/browser.nix
-    ./shared/hypr/hypr.nix
     ./shared/kitty.nix
     ./shared/programs.nix
     ./shared/theme.nix
     ./shared/xdg/xdg.nix
     ./shared/zathura.nix
     ./shared/shell.nix
+    ./shared/gnome.nix
   ];
 
   home.username = "simone";
   home.homeDirectory = "/home/simone";
 
   home.shellAliases = {
-    home-rebuild = "home-manager switch --flake ~/.config/nixos#work";
+    home-rebuild = "home-manager switch --flake ~/.config/nixos#gnome";
   };
 
   home.packages = [];
@@ -31,7 +31,6 @@
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
   home.stateVersion = "24.11"; # Please read the comment before changing.
-
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;

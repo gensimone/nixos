@@ -22,12 +22,25 @@
             ./system/machines/latitude5400/configuration.nix
           ];
         };
+        optiplex5050 = lib.nixosSystem {
+          inherit system;
+          modules = [
+            stylix.nixosModules.stylix
+            ./system/machines/optiplex5050/configuration.nix
+          ];
+        };
       };
       homeConfigurations = {
-        work = home-manager.lib.homeManagerConfiguration {
+        gnome = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [
-            ./user/work.nix
+            ./user/gnome.nix
+          ];
+        };
+        hyprland = home-manager.lib.homeManagerConfiguration {
+          inherit pkgs;
+          modules = [
+            ./user/hyprland.nix
           ];
         };
       };
