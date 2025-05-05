@@ -1,6 +1,6 @@
 #!/bin/sh
 
-wallpapers="$HOME/.config/nixos/wallpapers"
+wallpapers="$HOME/pictures/wallpapers"
 cmd="swww img --transition-type center"
 
 PREVIEW=true \
