@@ -17,10 +17,8 @@
         <value type="int" value="22"/>
         <value type="int" value="3"/>
         <value type="int" value="24"/>
-        <value type="int" value="16"/>
         <value type="int" value="15"/>
         <value type="int" value="6"/>
-        <value type="int" value="5"/>
         <value type="int" value="9"/>
         <value type="int" value="10"/>
         <value type="int" value="13"/>
@@ -30,7 +28,7 @@
       <property name="mode" type="uint" value="0"/>
       <property name="length-adjust" type="bool" value="true"/>
       <property name="nrows" type="uint" value="1"/>
-      <property name="background-style" type="uint" value="1"/>
+      <property name="background-style" type="uint" value="0"/>
       <property name="background-rgba" type="array">
         <value type="double" value="0.080000000000000002"/>
         <value type="double" value="0.080000000000000002"/>
@@ -46,9 +44,6 @@
   <property name="plugins" type="empty">
     <property name="plugin-3" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
-      <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-5" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-6" type="string" value="systray">
@@ -86,9 +81,6 @@
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-15" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-16" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-20" type="string" value="separator">

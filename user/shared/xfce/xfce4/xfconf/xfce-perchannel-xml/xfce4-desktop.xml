@@ -68,7 +68,7 @@
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="1"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/home/simone/.config/nixos/wallpapers/mountain-sphere.png"/>
+          <property name="last-image" type="string" value="/home/simone/pictures/wallpaper.jpg"/>
         </property>
         <property name="workspace1" type="empty">
           <property name="color-style" type="int" value="1"/>
@@ -125,7 +125,8 @@
     <property name="style" type="int" value="0"/>
     <property name="primary" type="bool" value="false"/>
     <property name="show-hidden-files" type="bool" value="false"/>
-    <property name="use-custom-font-size" type="bool" value="false"/>
+    <property name="use-custom-font-size" type="bool" value="true"/>
+    <property name="confirm-sorting" type="bool" value="true"/>
   </property>
   <property name="last-settings-migration-version" type="uint" value="1"/>
 </channel>
