@@ -7,6 +7,7 @@
     ./shared/kitty.nix
     ./shared/programs.nix
     ./shared/shell.nix
+    ./shared/spicetify.nix
     ./shared/theme.nix
     ./shared/wallpapers/wallpapers.nix
     ./shared/xdg/xdg.nix

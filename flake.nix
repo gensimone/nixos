@@ -1,5 +1,5 @@
 {
-  description = "nix flake";
+  description = "gensimone's Nix system configuration flake";
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
@@ -8,7 +8,7 @@
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
   };
 
-  outputs = { self, nixpkgs, home-manager, spicetify-nix, ... }:
+  outputs = { self, nixpkgs, home-manager, spicetify-nix, ... }@inputs:
   let
     lib = nixpkgs.lib;
     system = "x86_64-linux";
@@ -31,6 +31,7 @@
     homeConfigurations = {
       xfce = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
+        extraSpecialArgs = { inherit inputs; };
         modules = [
           spicetify-nix.homeManagerModules.spicetify
           ./user/xfce.nix
@@ -38,7 +39,9 @@
       };
       hyprland = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
+        extraSpecialArgs = { inherit inputs; };
         modules = [
+          spicetify-nix.homeManagerModules.spicetify
           ./user/hyprland.nix
         ];
       };
