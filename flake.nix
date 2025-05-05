@@ -5,10 +5,10 @@
     nixpkgs.url = "nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-    stylix.url = "github:danth/stylix";
+    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
   };
 
-  outputs = { self, nixpkgs, home-manager, stylix, ... }:
+  outputs = { self, nixpkgs, home-manager, spicetify-nix, ... }:
   let
     lib = nixpkgs.lib;
     system = "x86_64-linux";
@@ -18,14 +18,12 @@
       latitude5400 = lib.nixosSystem {
         inherit system;
         modules = [
-          stylix.nixosModules.stylix
             ./system/machines/latitude5400/configuration.nix
         ];
       };
       optiplex5050 = lib.nixosSystem {
         inherit system;
         modules = [
-          stylix.nixosModules.stylix
             ./system/machines/optiplex5050/configuration.nix
         ];
       };
@@ -34,6 +32,7 @@
       xfce = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [
+          spicetify-nix.homeManagerModules.spicetify
           ./user/xfce.nix
         ];
       };

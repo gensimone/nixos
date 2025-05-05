@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    obs-studio        # Free and open source software for video recording and live streaming
     bitwarden-desktop # Secure and free password manager for all of your devices
     blueman           # GTK-based Bluetooth Manager
     capitaine-cursors # X-cursor theme inspired by macOS and based on KDE Breeze

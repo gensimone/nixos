@@ -1,7 +1,6 @@
 { lib, ... }:
 
 {
-  # Steam installs several unfree packages.
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
     "steam"
     "steam-original"

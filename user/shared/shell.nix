@@ -23,7 +23,7 @@ in
   programs.zsh = {
     enable = true;
     shellAliases = shellAliases;
-    initExtra = "set -o vi";
+    initContent = "set -o vi";
   };
 
   programs.starship = {
