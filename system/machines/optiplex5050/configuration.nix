@@ -4,7 +4,6 @@
   imports = [
     ./hardware-configuration.nix
     ../../shared/bluetooth.nix
-    ../../shared/firewall.nix
     ../../shared/fonts.nix
     ../../shared/keyboard.nix
     ../../shared/networking.nix

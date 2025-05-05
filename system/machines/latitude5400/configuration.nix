@@ -5,7 +5,6 @@
     ./hardware-configuration.nix
     ../../shared/audio.nix
     ../../shared/bluetooth.nix
-    ../../shared/firewall.nix
     ../../shared/fonts.nix
     ../../shared/hyprland.nix
     ../../shared/networking.nix

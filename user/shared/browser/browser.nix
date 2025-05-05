@@ -1,6 +1,9 @@
 { pkgs, ... }:
 
 {
-  home.packages = with pkgs; [ firefox tor-browser ];
-  imports = [ ./qutebrowser/qutebrowser.nix ];
+  home.packages = with pkgs; [ tor-browser ];
+  imports = [
+    ./qutebrowser/qutebrowser.nix
+    ./firefox.nix
+  ];
 }
