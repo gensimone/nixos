@@ -3,6 +3,7 @@
 {
   services.xserver = {
     enable = true;
+    excludePackages = with pkgs; [ xterm ];
     desktopManager.xfce = {
       enable = true;
       noDesktop = false;
