@@ -4,9 +4,10 @@
   imports = [
     ./hardware-configuration.nix
     ../../shared/bluetooth.nix
+    ../../shared/desktop/xfce.nix
     ../../shared/fonts.nix
     ../../shared/keyboard.nix
-    ../../shared/networking.nix
+    ../../shared/networking/networking.nix
     ../../shared/options.nix
     ../../shared/programs.nix
     ../../shared/shell.nix

@@ -7,7 +7,7 @@
     ../../shared/bluetooth.nix
     ../../shared/fonts.nix
     ../../shared/hyprland.nix
-    ../../shared/networking.nix
+    ../../shared/networking/networking.nix
     ../../shared/options.nix
     ../../shared/power.nix
     ../../shared/programs.nix
