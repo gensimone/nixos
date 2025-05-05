@@ -6,10 +6,11 @@
     ./shared/hypr/hypr.nix
     ./shared/kitty.nix
     ./shared/programs.nix
+    ./shared/shell.nix
     ./shared/theme.nix
+    ./shared/wallpapers/wallpapers.nix
     ./shared/xdg/xdg.nix
     ./shared/zathura.nix
-    ./shared/shell.nix
   ];
 
   home.username = "simone";

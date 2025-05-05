@@ -7,6 +7,7 @@
     ./shared/programs.nix
     ./shared/shell.nix
     ./shared/theme.nix
+    ./shared/wallpapers/wallpapers.nix
     ./shared/xdg/xdg.nix
     ./shared/xfce/xfce.nix
     ./shared/zathura.nix
