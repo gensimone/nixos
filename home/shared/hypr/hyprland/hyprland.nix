@@ -63,9 +63,9 @@
       ];
 
       general = {
-        gaps_in = 5;
-        gaps_out = 15;
-        border_size = 3;
+        gaps_in = 12;
+        gaps_out = 18;
+        border_size = 4;
         layout = "dwindle";
         resize_on_border = true;
         "col.active_border" = "rgba(d8dee9ff) rgba(272a2cff) 45deg";
@@ -130,7 +130,7 @@
           "fadeLayers, 1, 10, default"
           "workspaces, 1, 7, overshot, slidevert"
           "border, 1, 1, liner"
-          "borderangle, 1, 30, liner, once"
+          "borderangle, 1, 30, liner"
         ];
       };
 
@@ -139,6 +139,7 @@
       bind = [
         # scratchpads
         "$mod, t, exec, pypr toggle term"
+        "$mod, e, exec, pypr toggle filemanager"
         "$mod, v, exec, pypr toggle volume"
         "$mod CTRL, m, exec, pypr toggle music"
 
@@ -198,7 +199,6 @@
 
         # applications shortcuts
         "$mod, Return, exec, kitty"
-        "$mod, e, exec, pcmanfm"
         "$mod, b, exec, firefox"
         "$mod, p, exec, rofi -show drun"
         "$mod, Escape, exec, hyprlock"
@@ -263,6 +263,10 @@
         "opacity 0.80 0.80,class:^(code-url-handler)$"
         "opacity 0.80 0.80,class:^(code-insiders-url-handler)$"
         "opacity 0.80 0.80,class:^(kitty)$"
+        "opacity 0.80 0.80,class:^(kitty-music)$"
+        "opacity 0.70 0.70,class:^(kitty-filemanager)$"
+        "opacity 0.70 0.70,class:^(kitty-dropterm)$"
+        "opacity 0.70 0.70,class:^(kitty-pulsemixer)$"
         "opacity 0.80 0.80,class:^(org.kde.dolphin)$"
         "opacity 0.80 0.80,class:^(org.kde.ark)$"
         "opacity 0.80 0.80,class:^(nwg-look)$"

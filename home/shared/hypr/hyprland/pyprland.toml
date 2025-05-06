@@ -9,6 +9,14 @@ size = "75% 60%"
 max_size = "1920px 100%"
 margin = 50
 
+[scratchpads.filemanager]
+animation = ""
+command = "kitty --class kitty-filemanager fx"
+class = "kitty-filemanager"
+size = "50% 50%"
+unfocus = "hide"
+lazy = true
+
 [scratchpads.volume]
 animation = ""
 command = "kitty --class kitty-pulsemixer pulsemixer"

@@ -17,13 +17,14 @@ let
     clean-all = "sudo nix-collect-garbage -d && clean-boot";
     build-all = "sys-rebuild && home-rebuild";
   };
-in
-
-{
+in {
   programs.zsh = {
     enable = true;
     shellAliases = shellAliases;
     initContent = "set -o vi";
+    sessionVariables = {
+      EDITOR = "nvim";
+    };
   };
 
   programs.starship = {
@@ -39,19 +40,20 @@ in
   };
 
   home.packages = with pkgs; [
-    fd      # Simple, fast and user-friendly alternative to find
-    irssi   # Terminal based IRC client
-    lf      # Terminal file manager written in Go and heavily inspired by ranger
-    ripgrep # Utility that combines the usability of The Silver Searcher with the raw speed of grep
-    tgpt    # ChatGPT in terminal without needing API keys
-    tree    # Command to produce a depth indented directory listing
-    wget    # Tool for retrieving files using HTTP, HTTPS, and FTP
+    fd       # Simple, fast and user-friendly alternative to find
+    irssi    # Terminal based IRC client
+    chafa    # Terminal graphics for the 21st century
+    ripgrep  # Utility that combines the usability of The Silver Searcher with the raw speed of grep
+    tgpt     # ChatGPT in terminal without needing API keys
+    tree     # Command to produce a depth indented directory listing
+    wget     # Tool for retrieving files using HTTP, HTTPS, and FTP
   ];
 
   imports = [
+    ./fastfetch/fastfetch.nix
+    ./fx/fx.nix
     ./git.nix
     ./nvim/nvim.nix
     ./tmux/tmux.nix
-    ./fastfetch/fastfetch.nix
   ];
 }
