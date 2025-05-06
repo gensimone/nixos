@@ -3,7 +3,6 @@
 {
   imports = [
     ./shared/browser/browser.nix
-    ./shared/hypr/hypr.nix
     ./shared/kitty.nix
     ./shared/programs.nix
     ./shared/shell.nix
@@ -11,14 +10,17 @@
     ./shared/theme.nix
     ./shared/wallpapers/wallpapers.nix
     ./shared/xdg/xdg.nix
+    ./shared/xfce/xfce.nix
     ./shared/zathura.nix
   ];
+
+  nixpkgs.config.allowUnfree = true;
 
   home.username = "simone";
   home.homeDirectory = "/home/simone";
 
   home.shellAliases = {
-    home-rebuild = "home-manager switch --flake ~/.config/nixos#hyprland";
+    home-rebuild = "home-manager switch --flake ~/.config/nixos#xfce";
   };
 
   home.packages = [];

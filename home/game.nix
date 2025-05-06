@@ -15,6 +15,8 @@
     ./shared/zathura.nix
   ];
 
+  nixpkgs.config.allowUnfree = true;
+
   home.username = "simone";
   home.homeDirectory = "/home/simone";
 

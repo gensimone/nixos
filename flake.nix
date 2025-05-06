@@ -34,7 +34,7 @@
         extraSpecialArgs = { inherit inputs; };
         modules = [
           spicetify-nix.homeManagerModules.spicetify
-          ./user/xfce.nix
+          ./home/xfce.nix
         ];
       };
       hyprland = home-manager.lib.homeManagerConfiguration {
@@ -42,7 +42,7 @@
         extraSpecialArgs = { inherit inputs; };
         modules = [
           spicetify-nix.homeManagerModules.spicetify
-          ./user/hyprland.nix
+          ./home/hyprland.nix
         ];
       };
     };

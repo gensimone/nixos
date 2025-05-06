@@ -1,8 +1,6 @@
 { pkgs, lib, ... }:
 
 {
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [ "megasync" ];
-
   home.packages = with pkgs; [
     bitwarden-desktop # Secure and free password manager for all of your devices
     blueman           # GTK-based Bluetooth Manager
@@ -14,7 +12,7 @@
     gimp              # GNU Image Manipulation Program
     legcord           # Lightweight, alternative desktop client for Discord
     lm_sensors        # Tools for reading hardware sensors
-    megasync # Easy automated syncing between your computers and your MEGA Cloud Drive
+    megasync          # Easy automated syncing between your computers and your MEGA Cloud Drive
     mpv               # General-purpose media player, fork of MPlayer and mplayer2
     obs-studio        # Free and open source software for video recording and live streaming
     pipx              # Install and run Python applications in isolated environments
