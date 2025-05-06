@@ -5,7 +5,7 @@ return {
       { '<leader>gc', ':Telescope git_commits<cr>', mode = { 'n' }, desc = 'Git Commits' },
       { '<leader>gs', ':Telescope git_status<cr>',  mode = { 'n' }, desc = 'Git Status' },
       { '<leader>fm', ':Telescope man_pages<cr>',   mode = { 'n' }, desc = 'Man Pages' },
-      { '<leader>ff', ':Telescope find_files<cr>',  mode = { 'n' }, desc = 'Find Files' },
+      { '<leader>.',  ':Telescope find_files<cr>',  mode = { 'n' }, desc = 'Find Files' },
       { '<leader>fg', ':Telescope live_grep<cr>',   mode = { 'n' }, desc = 'Live Grep' },
       { '<leader>fw', ':Telescope grep_string<cr>', mode = { 'n' }, desc = 'Grep String' },
       { '<leader>fr', ':Telescope oldfiles<cr>',    mode = { 'n' }, desc = 'Recent Files' },
@@ -14,7 +14,7 @@ return {
       { '<leader>lt', ':Telescope<cr>',             mode = { 'n' }, desc = 'Launch Telescope' },
 
       -- 'search_dirs' specific
-      { '<leader>hff', ':Telescope find_files  search_dirs={"~"}<cr>', mode = { 'n' }, desc = 'Recent Files' },
+      { '<leader>ff',  ':Telescope find_files  search_dirs={"~"}<cr>', mode = { 'n' }, desc = 'Recent Files' },
       { '<leader>hfg', ':Telescope live_grep   search_dirs={"~"}<cr>', mode = { 'n' }, desc = 'Buffers' },
       { '<leader>hfw', ':Telescope grep_string search_dirs={"~"}<cr>', mode = { 'n' }, desc = 'Recent Files' },
       { '<leader>fc',  ':Telescope find_files  search_dirs={"~/.config/nvim"}<cr>', mode = { 'n' }, desc = 'Neovim Config Files' },

@@ -7,7 +7,8 @@
     hyprpicker           # Wlroots-compatible Wayland color picker that does not suck
     libnotify            # Library that sends desktop notifications to a notification daemon
     networkmanagerapplet # NetworkManager control applet for GNOME
-    pavucontrol          # PulseAudio Volume Control
+    # pavucontrol          # PulseAudio Volume Control
+    pulsemixer           # Cli and curses mixer for pulseaudio
     pcmanfm              # File manager with GTK interface
     soteria              # Polkit authentication agent written in GTK designed to be used with any desktop environment
     swayimg              # Image viewer for Sway/Wayland
@@ -17,10 +18,8 @@
     udisks               # Daemon, tools and libraries to access and manipulate disks, storage devices and technologies
   ];
 
-  xdg.configFile."hypr/scripts".source = ./scripts;
-
   imports = [
-    ./hyprland.nix
+    ./hyprland/hyprland.nix
     ./hypridle.nix
     ./hyprlock.nix
     ../rofi/rofi.nix

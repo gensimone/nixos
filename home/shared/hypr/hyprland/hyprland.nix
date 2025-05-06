@@ -1,6 +1,11 @@
 { config, pkgs, ... }:
 
 {
+  home.packages = with pkgs; [ pyprland ];
+
+  xdg.configFile."hypr/pyprland.toml".source = ./pyprland.toml;
+  xdg.configFile."hypr/scripts".source = ./scripts;
+
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
@@ -45,15 +50,16 @@
       xwayland.force_zero_scaling = true;
 
       exec-once = [
-        "waybar"
-        "nm-applet"
-        "soteria"
-        "mako"
-        "hypridle"
-        "swayosd-server"
-        "swww-daemon"
         "(sleep 5 && blueman-applet)"
         "(sleep 5 && megasync)"
+        "hypridle"
+        "mako"
+        "nm-applet"
+        "pypr"
+        "soteria"
+        "swayosd-server"
+        "swww-daemon"
+        "waybar"
       ];
 
       general = {
@@ -131,6 +137,11 @@
       "$mod" = "ALT";
 
       bind = [
+        # scratchpads
+        "$mod, t, exec, pypr toggle term"
+        "$mod, v, exec, pypr toggle volume"
+        "$mod CTRL, m, exec, pypr toggle music"
+
         # general binds
         "$mod, w, toggleFloating"
         "$mod, f, fullscreen"
@@ -155,16 +166,16 @@
         "$mod, l, movefocus, r"
 
         # move focused window to a workspace silently
-        "$mod CTRL, 0, movetoworkspacesilent, 0"
-        "$mod CTRL, 1, movetoworkspacesilent, 1"
-        "$mod CTRL, 2, movetoworkspacesilent, 2"
-        "$mod CTRL, 3, movetoworkspacesilent, 3"
-        "$mod CTRL, 4, movetoworkspacesilent, 4"
-        "$mod CTRL, 5, movetoworkspacesilent, 5"
-        "$mod CTRL, 6, movetoworkspacesilent, 6"
-        "$mod CTRL, 7, movetoworkspacesilent, 7"
-        "$mod CTRL, 8, movetoworkspacesilent, 8"
-        "$mod CTRL, 9, movetoworkspacesilent, 9"
+        # "$mod CTRL, 0, movetoworkspacesilent, 0"
+        # "$mod CTRL, 1, movetoworkspacesilent, 1"
+        # "$mod CTRL, 2, movetoworkspacesilent, 2"
+        # "$mod CTRL, 3, movetoworkspacesilent, 3"
+        # "$mod CTRL, 4, movetoworkspacesilent, 4"
+        # "$mod CTRL, 5, movetoworkspacesilent, 5"
+        # "$mod CTRL, 6, movetoworkspacesilent, 6"
+        # "$mod CTRL, 7, movetoworkspacesilent, 7"
+        # "$mod CTRL, 8, movetoworkspacesilent, 8"
+        # "$mod CTRL, 9, movetoworkspacesilent, 9"
 
         # move focused window to a workspace
         "$mod SHIFT, 0, movetoworkspacesilent, 0"
@@ -179,11 +190,11 @@
         "$mod SHIFT, 9, movetoworkspacesilent, 9"
 
         # toggle waybar
-        "$mod, t, exec, kill -USR1 $(pgrep waybar)"
+        # "$mod, t, exec, kill -USR1 $(pgrep waybar)"
 
         # special workspace binds
-        "$mod SHIFT, s, movetoworkspacesilent, special"
-        "$mod, s, togglespecialworkspace"
+        # "$mod SHIFT, s, movetoworkspacesilent, special"
+        # "$mod, s, togglespecialworkspace"
 
         # applications shortcuts
         "$mod, Return, exec, kitty"

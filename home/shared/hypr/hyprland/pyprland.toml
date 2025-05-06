@@ -1,0 +1,26 @@
+[pyprland]
+plugins = [ "scratchpads" ]
+
+[scratchpads.term]
+animation = ""
+command = "kitty --class kitty-dropterm"
+class = "kitty-dropterm"
+size = "75% 60%"
+max_size = "1920px 100%"
+margin = 50
+
+[scratchpads.volume]
+animation = ""
+command = "kitty --class kitty-pulsemixer pulsemixer"
+class = "kitty-pulsemixer"
+size = "50% 38%"
+unfocus = "hide"
+lazy = true
+
+[scratchpads.music]
+animation = ""
+command = "kitty --class kitty-music cmus"
+class = "kitty-music"
+size = "50% 50%"
+unfocus = "hide"
+lazy = true

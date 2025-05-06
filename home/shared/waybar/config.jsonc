@@ -145,7 +145,7 @@
       },
       "pulseaudio": {
         "scroll-step": 1,
-        "on-click": "pavucontrol",
+        "on-click": "pypr toggle volume",
         "format": "{icon} {volume}%{format_source}",
         "format-bluetooth": " {volume}%{format_source}",
         "format-bluetooth-muted": " 0%{format_source}",
