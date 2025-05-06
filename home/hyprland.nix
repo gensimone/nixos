@@ -4,7 +4,7 @@
   imports = [
     ./shared/browser/browser.nix
     ./shared/hypr/hypr.nix
-    ./shared/kitty.nix
+    ./shared/kitty/kitty.nix
     ./shared/shell.nix
     ./shared/spicetify.nix
     ./shared/programs.nix
