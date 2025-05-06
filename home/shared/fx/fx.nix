@@ -1,6 +1,6 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   home.packages = with pkgs; [ felix-fm ];
-  xdg.configFile."felix/config.yaml".source = ./config.jsonc;
+  xdg.configFile."felix/config.yml".source = ./config.yml;
 }

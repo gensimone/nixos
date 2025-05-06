@@ -67,12 +67,6 @@
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
       },
       "group/group-system-status": {
-        // "drawer": {
-        //   "click-to-reveal": true,
-        //   "transition-duration": 500,
-        //   "children-class": "not-power",
-        //   "transition-left-to-right": false
-        // },
         "orientation": "inherit",
         "modules": [
             "cpu",
@@ -132,6 +126,13 @@
       },
       "hyprland/workspaces": {
         "format": "{icon}",
+        "format-icons": {
+          "1": "Δ",
+          "2": "ω",
+          "3": "π",
+          "4": "λ",
+          "5": "Σ"
+        },
         "persistent-workspaces": {
           "*": 5
         }
