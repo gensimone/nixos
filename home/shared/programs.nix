@@ -14,7 +14,6 @@
     lm_sensors        # Tools for reading hardware sensors
     megasync          # Easy automated syncing between your computers and your MEGA Cloud Drive
     mpv               # General-purpose media player, fork of MPlayer and mplayer2
-    obs-studio        # Free and open source software for video recording and live streaming
     pipx              # Install and run Python applications in isolated environments
     poetry            # Python dependency management and packaging made easy
     pyright           # Type checker for the Python language

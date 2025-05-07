@@ -3,10 +3,10 @@
 {
   imports = [
     ./hardware-configuration.nix
+    ../../shared/audio.nix
     ../../shared/bluetooth.nix
-    ../../shared/desktop/xfce.nix
+    ../../shared/desktop/hyprland.nix
     ../../shared/fonts.nix
-    ../../shared/keyboard.nix
     ../../shared/networking/networking.nix
     ../../shared/options.nix
     ../../shared/programs.nix
@@ -14,7 +14,6 @@
     ../../shared/timezone.nix
     ../../shared/user.nix
     ../../shared/virtualization.nix
-    ../../shared/xfce.nix
   ];
 
   boot = {

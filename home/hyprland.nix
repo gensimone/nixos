@@ -3,11 +3,12 @@
 {
   imports = [
     ./shared/browser/browser.nix
-    ./shared/hypr/hypr.nix
+    ./shared/cmus.nix
+    ./shared/hypr/hypr-land.nix
     ./shared/kitty/kitty.nix
+    ./shared/programs.nix
     ./shared/shell.nix
     ./shared/spicetify.nix
-    ./shared/programs.nix
     ./shared/theme.nix
     ./shared/wallpapers/wallpapers.nix
     ./shared/xdg/xdg.nix
