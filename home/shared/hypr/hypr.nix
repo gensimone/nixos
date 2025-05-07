@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    kooha                # Elegantly record your screen
     batsignal            # Lightweight battery daemon written in C
     wl-clipboard         # Command-line copy/paste utilities for Wayland
     brightnessctl        # This program allows you read and control device brightness
