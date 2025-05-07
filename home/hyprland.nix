@@ -4,7 +4,7 @@
   imports = [
     ./shared/browser/browser.nix
     ./shared/cmus.nix
-    ./shared/hypr/hyprland/hyprland.nix
+    ./shared/hypr/hypr.nix
     ./shared/kitty/kitty.nix
     ./shared/programs.nix
     ./shared/shell.nix
