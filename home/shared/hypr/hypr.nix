@@ -3,6 +3,8 @@
 {
   home.packages = with pkgs; [
     batsignal            # Lightweight battery daemon written in C
+    clipse               # Useful clipboard manager TUI for Unix
+    wl-clipboard         # Command-line copy/paste utilities for Wayland
     brightnessctl        # This program allows you read and control device brightness
     hyprpicker           # Wlroots-compatible Wayland color picker that does not suck
     libnotify            # Library that sends desktop notifications to a notification daemon
@@ -24,5 +26,6 @@
     ../rofi/rofi.nix
     ../waybar/waybar.nix
     ../mako.nix
+    ../batsignal.nix
   ];
 }

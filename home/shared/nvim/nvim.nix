@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 
 {
   home.packages = with pkgs; [
@@ -9,5 +9,5 @@
     luajitPackages.luarocks
   ];
 
-  xdg.configFile."nvim".source = ./nvim;
+  xdg.configFile."nvim".source = config.lib.file.mkOutOfStoreSymlink /home/simone/.config/nixos/home/shared/nvim/nvim;
 }

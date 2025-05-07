@@ -10,7 +10,7 @@
     themeFile = "Nord";
     settings = {
       confirm_os_window_close = 0;
-      copy_on_selct = true;
+      copy_on_select = true;
       cursor_blink_interval = 0.5;
       cursor_shape = "beam";
       cursor_shape_unfocused = "hollow";

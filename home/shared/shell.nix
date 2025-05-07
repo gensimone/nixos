@@ -2,7 +2,6 @@
 
 let
   shellAliases = {
-    config ="nvim $HOME/.config/nixos";
     cp = "cp -i";
     df = "df -h";
     du = "du -h";
@@ -24,6 +23,7 @@ in {
     initContent = "set -o vi";
     sessionVariables = {
       EDITOR = "nvim";
+      VISUAL = "nvim";
     };
   };
 
@@ -51,9 +51,9 @@ in {
 
   imports = [
     ./fastfetch/fastfetch.nix
-    ./fx/fx.nix
     ./git.nix
     ./nvim/nvim.nix
+    ./ranger/ranger.nix
     ./tmux/tmux.nix
   ];
 }

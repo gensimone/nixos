@@ -52,6 +52,7 @@
       exec-once = [
         "(sleep 5 && blueman-applet)"
         "(sleep 5 && megasync)"
+        "clipse -listen"
         "hypridle"
         "mako"
         "nm-applet"
@@ -140,13 +141,16 @@
         # scratchpads
         "$mod, t, exec, pypr toggle term"
         "$mod, e, exec, pypr toggle filemanager"
-        "$mod, v, exec, pypr toggle volume"
         "$mod CTRL, m, exec, pypr toggle music"
 
         # general binds
         "$mod, w, toggleFloating"
         "$mod, f, fullscreen"
         "$mod, q, killactive"
+
+        # apps
+        "$mod, a, exec, kitty --class pulsemixer pulsemixer"
+        "$mod, c, exec, kitty --class clipse clipse"
 
         # switch workspaces
         "$mod, 0, workspace, 0"
@@ -266,7 +270,7 @@
         "opacity 0.80 0.80,class:^(kitty-music)$"
         "opacity 0.70 0.70,class:^(kitty-filemanager)$"
         "opacity 0.70 0.70,class:^(kitty-dropterm)$"
-        "opacity 0.70 0.70,class:^(kitty-pulsemixer)$"
+        "opacity 0.70 0.70,class:^(pulsemixer)$"
         "opacity 0.80 0.80,class:^(org.kde.dolphin)$"
         "opacity 0.80 0.80,class:^(org.kde.ark)$"
         "opacity 0.80 0.80,class:^(nwg-look)$"
@@ -311,8 +315,7 @@
         "opacity 0.80 0.80,class:^(io.missioncenter.MissionCenter)$"
         "opacity 0.80 0.80,class:^(io.github.flattool.Warehouse)$"
 
-        "float,class:^(org.kde.dolphin)$,title:^(Progress Dialog — Dolphin)$"
-        "float,class:^(org.kde.dolphin)$,title:^(Copying — Dolphin)$"
+        "float,class:(clipse)"
         "float,title:^(About Mozilla Firefox)$"
         "float,class:^(firefox)$,title:^(Picture-in-Picture)$"
         "float,class:^(firefox)$,title:^(Library)$"
@@ -343,6 +346,10 @@
         "float,class:^(io.gitlab.adhami3310.Impression)$"
         "float,class:^(io.missioncenter.MissionCenter)$"
         "float,class:^(xdg-desktop-portal-gtk)$"
+        "float,class:^(pulsemixer)$"
+
+        "size 620 650,class:^(clipse)$"
+        "size 620 350,class:^(pulsemixer)$"
       ];
 
       windowrule = [
@@ -363,7 +370,7 @@
 
   xdg.portal = {
     enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+    extraPortals = with pkgs; [ xdg-desktop-portal-gtk ];
     config.common.default = "*";
   };
 }
