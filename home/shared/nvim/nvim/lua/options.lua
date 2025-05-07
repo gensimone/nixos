@@ -12,11 +12,11 @@ vim.g.background = "light"
 
 vim.opt.swapfile = false
 vim.opt.termguicolors = true
-vim.opt.number = true
+vim.opt.number = false
 vim.opt.relativenumber = false
 vim.opt.signcolumn = "no"
 vim.opt.undofile = true
-vim.opt.laststatus = 2
+vim.opt.laststatus = 0
 vim.opt.conceallevel = 3
 vim.opt.fillchars:append { eob = " " }
 vim.diagnostic.config({

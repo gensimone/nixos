@@ -9,7 +9,7 @@ in {
       adblockify
       hidePodcasts
     ];
-    theme = spicePkgs.themes.comfy;
-    colorScheme = "Nord";
+    theme = spicePkgs.themes.onepunch;
+    colorScheme = "dark";
   };
 }

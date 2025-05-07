@@ -3,24 +3,24 @@
 {
   home.pointerCursor = {
     gtk.enable = true;
-    package = pkgs.nordzy-cursor-theme;
-    name = "Nordzy-cursors-white";
+    package = pkgs.graphite-cursors;
+    name = "graphite-dark";
     size = 24;
   };
 
   gtk = {
     enable = true;
     theme = {
-      name = "Nordic-darker";
-      package = pkgs.nordic;
+      name = "Gruvbox-Dark";
+      package = pkgs.gruvbox-gtk-theme;
     };
     iconTheme = {
-      name = "Papirus-Dark";
-      package = pkgs.papirus-nord;
+      name = "Gruvbox-Plus-Dark";
+      package = pkgs.gruvbox-plus-icons;
     };
     cursorTheme = {
-      name = "Nordzy-cursors-white";
-      package = pkgs.nordzy-cursor-theme;
+      name = "graphite-dark";
+      package = pkgs.graphite-cursors;
     };
   };
   qt = {

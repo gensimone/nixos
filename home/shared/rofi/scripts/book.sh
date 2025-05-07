@@ -4,7 +4,7 @@ books="$HOME/books"
 cmd="zathura"
 
 PREVIEW=true \
-rofi -theme $HOME/.config/rofi/nord.rasi \
+rofi -theme $HOME/.config/rofi/wallset.rasi \
 	-show filebrowser -filebrowser-command "$cmd" \
 	-filebrowser-directory "$books" \
 	-filebrowser-sorting-method mtime \

@@ -21,9 +21,9 @@
       width = 300;
       default-timeout = 5000;
       ignore-timeout = false;
-      background-color = "#383E4E";
+      background-color = "#282828";
       text-color = "#DFDFDF";
-      border-color = "#454D5F";
+      border-color = "#649264";
     };
   };
 }

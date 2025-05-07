@@ -64,12 +64,12 @@
       ];
 
       general = {
-        gaps_in = 12;
-        gaps_out = 18;
+        gaps_in = 5;
+        gaps_out = 10;
         border_size = 4;
         layout = "dwindle";
         resize_on_border = true;
-        "col.active_border" = "rgba(d8dee9ff) rgba(272a2cff) 45deg";
+        "col.active_border" = "rgba(649264ff) rgba(272a2cff) 45deg";
         "col.inactive_border" = "rgba(272a2cff) rgba(272a2cff) 45deg";
       };
 
@@ -314,6 +314,8 @@
         "opacity 0.80 0.80,class:^(io.gitlab.adhami3310.Impression)$"
         "opacity 0.80 0.80,class:^(io.missioncenter.MissionCenter)$"
         "opacity 0.80 0.80,class:^(io.github.flattool.Warehouse)$"
+        "opacity 0.80 0.80,class:^(io.github.flattool.Warehouse)$"
+        "opacity 0.80 0.80,class:^(clipse)$"
 
         "float,class:(clipse)"
         "float,title:^(About Mozilla Firefox)$"

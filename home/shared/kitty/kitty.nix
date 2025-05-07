@@ -7,7 +7,7 @@
       name = "Fira Code Nerd Font";
       size = 11;
     };
-    themeFile = "Nord";
+    themeFile = "GruvboxMaterialDarkMedium";
     settings = {
       confirm_os_window_close = 0;
       copy_on_select = true;
