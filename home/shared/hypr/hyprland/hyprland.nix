@@ -52,6 +52,7 @@
       exec-once = [
         "(sleep 5 && blueman-applet)"
         "(sleep 5 && megasync)"
+        "hyprctl dispatch exec [workspace special silent] firefox"
         "clipse -listen"
         "hypridle"
         "mako"

@@ -8,11 +8,11 @@ let
 in {
   programs.firefox = {
     enable = true;
-    package = pkgs.firefox-esr;
+    # package = pkgs.firefox-esr;
 
     # See https://mozilla.github.io/policy-templates/
     policies = {
-      Homepage = { URL = "https://gensimone.github.io/startpage"; Locked = true; };
+      Homepage = { URL = "file:///home/simone/sources/personal/startpage/index.html"; Locked = true; };
       AutofillAddressEnabled = false;
       AutofillCreditCardEnabled = false;
       BlockAboutProfiles = true;
