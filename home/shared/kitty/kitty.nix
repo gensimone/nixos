@@ -18,6 +18,7 @@
       mouse_hide_wait = 0.5;
       scrollback_indicator_opacity = 0.0;
       strip_trailing_spaces = "smart";
+      background_opacity = 0.9;
       window_padding_width = 10;
     };
   };

@@ -1,4 +1,6 @@
 config.load_autoconfig(False)
+config.bind('zi', 'zoom-in')
+config.bind('zo', 'zoom-out')
 c.auto_save.session = True
 c.backend = "webengine"
 c.changelog_after_upgrade = "patch"
