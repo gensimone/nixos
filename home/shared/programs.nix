@@ -14,10 +14,6 @@
     lm_sensors        # Tools for reading hardware sensors
     megasync          # Easy automated syncing between your computers and your MEGA Cloud Drive
     mpv               # General-purpose media player, fork of MPlayer and mplayer2
-    pipx              # Install and run Python applications in isolated environments
-    poetry            # Python dependency management and packaging made easy
-    pyright           # Type checker for the Python language
-    python3           # High-level dynamically-typed programming language
     qbittorrent       # Featureful free software BitTorrent client
     syncthing         # Open Source Continuous File Synchronization
     telegram-desktop  # Telegram Desktop messaging app
@@ -25,5 +21,7 @@
     vim               # Most popular clone of the VI editor
     wireshark         # Powerful network protocol analyzer
     xdg-user-dirs     # Tool to help manage well known user directories
+
+    jetbrains.idea-community # Free Java, Kotlin, Groovy and Scala IDE from jetbrains (patched binaries from jetbrains)
   ];
 }

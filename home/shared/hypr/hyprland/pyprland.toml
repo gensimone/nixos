@@ -11,7 +11,7 @@ margin = 50
 
 [scratchpads.filemanager]
 animation = ""
-command = "kitty --class kitty-filemanager fx"
+command = "kitty --class kitty-filemanager ranger"
 class = "kitty-filemanager"
 size = "50% 50%"
 unfocus = "hide"
