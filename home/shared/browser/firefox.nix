@@ -11,6 +11,7 @@ in {
 
     # See https://mozilla.github.io/policy-templates/
     policies = {
+      Homepage = { URL = "https://gensimone.github.io/startpage"; Locked = true; };
       AutofillAddressEnabled = false;
       AutofillCreditCardEnabled = false;
       BlockAboutProfiles = true;
