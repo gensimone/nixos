@@ -1,12 +1,6 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
-  programs.irssi = {
-    enable = true;
-    aliases = {};
-    networks = {};
-    extraConfig = "";
-  };
-
+  home.packages = with pkgs; [ irssi ];
   home.file.".irssi/scripts/autorun".source = ./autorun;
 }
