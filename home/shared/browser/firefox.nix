@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 let
   lock-false = {
@@ -8,6 +8,7 @@ let
 in {
   programs.firefox = {
     enable = true;
+    package = pkgs.firefox-esr;
 
     # See https://mozilla.github.io/policy-templates/
     policies = {
