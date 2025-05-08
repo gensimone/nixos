@@ -93,4 +93,5 @@ in {
         ];
     };
   };
+  home.file.".local/share/fonts/startpage".source = ./fonts;
 }

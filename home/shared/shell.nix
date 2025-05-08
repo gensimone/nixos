@@ -27,6 +27,8 @@ in {
     };
   };
 
+  home.sessionPath = [ "$HOME/.local/bin" ];
+
   programs.starship = {
     enable = true;
     settings = {
