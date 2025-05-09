@@ -3,15 +3,17 @@
 {
   imports = [
     ./shared/browser/browser.nix
+    ./shared/cmus.nix
+    ./shared/hypr/hypr.nix
     ./shared/kitty/kitty.nix
     ./shared/programs.nix
+    ./shared/python/python.nix
     ./shared/shell.nix
     ./shared/spicetify.nix
     ./shared/steam.nix
     ./shared/theme.nix
     ./shared/wallpapers/wallpapers.nix
     ./shared/xdg/xdg.nix
-    ./shared/xfce/xfce.nix
     ./shared/zathura.nix
   ];
 
