@@ -1,0 +1,48 @@
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: "Fira Code Nerd Font";
+    font-size: 15px;
+    min-height: 0;
+    padding: 0 2;
+}
+
+window#waybar {
+  background: shade(alpha(@borders, 0.45), 1.25);
+  color: @theme_text_color;
+}
+
+.topbar {
+    border-bottom: 2px solid rgba(100, 114, 125, 1);
+}
+
+.bottombar {
+    border-top: 2px solid rgba(100, 114, 125, 1);
+}
+
+#battery,
+#clock,
+#cpu,
+#disk,
+#memory,
+#mode,
+#network.wifi,
+#network.ethernet,
+#network.disconnected,
+#pulseaudio,
+#taskbar,
+#temperature,
+#tray {
+    margin: 5 5;
+    color: @theme_text_color;
+}
+
+#battery.warning:not(.charging) {
+    background: #f53c3c;
+    color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

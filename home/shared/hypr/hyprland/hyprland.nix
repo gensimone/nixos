@@ -267,10 +267,10 @@
         "opacity 0.80 0.80,class:^([Cc]ode)$"
         "opacity 0.80 0.80,class:^(code-url-handler)$"
         "opacity 0.80 0.80,class:^(code-insiders-url-handler)$"
-        "opacity 0.80 0.80,class:^(kitty)$"
-        "opacity 0.80 0.80,class:^(kitty-music)$"
-        "opacity 0.70 0.70,class:^(kitty-filemanager)$"
-        "opacity 0.70 0.70,class:^(kitty-dropterm)$"
+        "opacity 0.85 0.85,class:^(kitty)$"
+        "opacity 0.90 0.90,class:^(kitty-music)$"
+        "opacity 0.90 0.90,class:^(kitty-filemanager)$"
+        "opacity 0.90 0.90,class:^(kitty-dropterm)$"
         "opacity 0.70 0.70,class:^(pulsemixer)$"
         "opacity 0.80 0.80,class:^(org.kde.dolphin)$"
         "opacity 0.80 0.80,class:^(org.kde.ark)$"
@@ -316,7 +316,7 @@
         "opacity 0.80 0.80,class:^(io.missioncenter.MissionCenter)$"
         "opacity 0.80 0.80,class:^(io.github.flattool.Warehouse)$"
         "opacity 0.80 0.80,class:^(io.github.flattool.Warehouse)$"
-        "opacity 0.80 0.80,class:^(clipse)$"
+        "opacity 0.90 0.90,class:^(clipse)$"
 
         "float,class:(clipse)"
         "float,title:^(About Mozilla Firefox)$"
@@ -363,8 +363,24 @@
         "float,title:^(Confirm to replace files)$"
         "float,title:^(File Operation Progress)$"
       ];
+
+      # https://wiki.hyprland.org/Configuring/Environment-variables/
+      env = [
+        "QT_SCALE_FACTOR=1"
+        "QT_AUTO_SCREEN_SCALE_FACTOR,1"
+        "QT_QPA_PLATFORM,wayland;xcb"
+        "QT_QPA_PLATFORMTHEME,gtk"
+        "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
+
+        "XDG_SESSION_DESKTOP,Hyprland"
+        "XDG_CURRENT_DESKTOP,Hyprland"
+        "XDG_SESSION_TYPE,wayland"
+      ];
     };
   };
+
+
+  # https://github.com/meganz/MEGAsync/issues/710
 
   home.sessionVariables = {
     WLR_NO_HARDWARE_CURSORS = "1"; # If your cursor becomes invisible
