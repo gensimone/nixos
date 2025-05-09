@@ -1,10 +1,28 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 let
-  lock-false = {
-    Value = false;
-    Status = "locked";
-  };
+  lock-false = { Value = false; Status = "locked"; };
+
+  # See about:debugging#/runtime/this-firefox
+  block-addons = { "*".installation_mode = "blocked"; };
+  extensions = with builtins;
+    let extension = shortId: uuid: {
+      name = uuid;
+      value = {
+        install_url = "https://addons.mozilla.org/en-US/firefox/downloads/latest/${shortId}/latest.xpi";
+
+        # The extension is automatically installed and can’t be removed by the user.
+        # This option is not valid for the default configuration and requires an install_url.
+        installation_mode = "force_installed";
+      };
+    };
+    in listToAttrs [
+      (extension "ublock-origin"              "uBlock0@raymondhill.net")
+      (extension "bitwarden-password-manager" "{446900e4-71c2-419f-a6a7-df9c091e268b}")
+      (extension "clearurls"                  "{74145f27-f039-47ce-a470-a662b129930a}")
+      (extension "vimium-ff"                  "{d7742d87-e61d-4b78-b8a1-b469842139fa}")
+      (extension "minimal-youtube-extension"  "{74062023-cdb1-45a3-9fc8-b5255259e4a0}")
+    ];
 in {
   programs.firefox = {
     enable = true;
@@ -75,22 +93,7 @@ in {
         "browser.urlbar.suggest.yelp" = lock-false;
       };
 
-      # See about:debugging#/runtime/this-firefox
-      ExtensionSettings = with builtins;
-        let extension = shortId: uuid: {
-          name = uuid;
-          value = {
-            install_url = "https://addons.mozilla.org/en-US/firefox/downloads/latest/${shortId}/latest.xpi";
-            installation_mode = "normal_installed";
-          };
-        };
-        in listToAttrs [
-          (extension "ublock-origin"              "uBlock0@raymondhill.net")
-          (extension "bitwarden-password-manager" "{446900e4-71c2-419f-a6a7-df9c091e268b}")
-          (extension "clearurls"                  "{74145f27-f039-47ce-a470-a662b129930a}")
-          (extension "vimium-ff"                  "{d7742d87-e61d-4b78-b8a1-b469842139fa}")
-          (extension "minimal-youtube-extension"  "{74062023-cdb1-45a3-9fc8-b5255259e4a0}")
-        ];
+      ExtensionSettings = lib.mkMerge [ block-addons extensions ];
     };
   };
   home.file.".local/share/fonts/startpage".source = ./fonts;
