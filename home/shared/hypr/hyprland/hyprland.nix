@@ -65,8 +65,8 @@
       ];
 
       general = {
-        gaps_in = 5;
-        gaps_out = 10;
+        gaps_in = 8;
+        gaps_out = 23;
         border_size = 4;
         layout = "dwindle";
         resize_on_border = true;
@@ -75,7 +75,7 @@
       };
 
       decoration = {
-        rounding = 10;
+        rounding = 6;
         dim_special = 0.3;
         active_opacity = 0.95;
         inactive_opacity = 0.9;
@@ -92,6 +92,11 @@
 
         shadow = {
           enabled = true;
+          # range = 10;
+          # render_power = 1;
+          # sharp = true;
+          # ignore_window = true;
+          # scale = 0.5;
         };
       };
 
