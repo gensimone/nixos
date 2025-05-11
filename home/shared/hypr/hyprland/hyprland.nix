@@ -253,13 +253,17 @@
       bindel = [
         # laptop multimedia keys for volume and LCD brightness
         ",XF86AudioRaiseVolume, exec, swayosd-client --output-volume raise"
-        "$mod, I, exec, swayosd-client --output-volume raise"
+        "$mod, i, exec, swayosd-client --output-volume raise"
         ",XF86AudioLowerVolume, exec, swayosd-client --output-volume lower"
-        "$mod, U, exec, swayosd-client --output-volume lower"
+        "$mod, u, exec, swayosd-client --output-volume lower"
         ",XF86AudioMute, exec, swayosd-client --output-volume mute-toggle"
-        "$mod, M, exec, swayosd-client --output-volume mute-toggle"
+        "$mod, m, exec, swayosd-client --output-volume mute-toggle"
+
         ",XF86AudioMicMute, exec, swayosd-client --input-volume mute-toggle"
-        "$mod, N, exec, swayosd-client --input-volume mute-toggle"
+        "$mod, n, exec, swayosd-client --input-volume mute-toggle"
+        "$mod CTRL, i, exec, swayosd-client --input-volume raise"
+        "$mod CTRL, u, exec, swayosd-client --input-volume lower"
+
         ",XF86MonBrightnessUp, exec, swayosd-client --brightness raise"
         ",XF86MonBrightnessDown, exec, swayosd-client --brightness lower"
       ];
