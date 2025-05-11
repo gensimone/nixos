@@ -15,7 +15,6 @@
     megasync          # Easy automated syncing between your computers and your MEGA Cloud Drive
     mpv               # General-purpose media player, fork of MPlayer and mplayer2
     qbittorrent       # Featureful free software BitTorrent client
-    syncthing         # Open Source Continuous File Synchronization
     telegram-desktop  # Telegram Desktop messaging app
     unzip             # Extraction utility for archives compressed in .zip format
     vim               # Most popular clone of the VI editor
