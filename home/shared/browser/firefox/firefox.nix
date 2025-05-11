@@ -22,6 +22,12 @@ let
       (extension "clearurls"                  "{74145f27-f039-47ce-a470-a662b129930a}")
       (extension "vimium-ff"                  "{d7742d87-e61d-4b78-b8a1-b469842139fa}")
       (extension "minimal-youtube-extension"  "{74062023-cdb1-45a3-9fc8-b5255259e4a0}")
+
+      # settings:
+      # sepia: +35
+      # grayscale: +10
+      # contrast: -10
+      # brightness: -5
       (extension "darkreader"                 "addon@darkreader.org")
 
       # theme
