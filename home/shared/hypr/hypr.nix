@@ -20,13 +20,13 @@
   ];
 
   imports = [
-    ./hyprland/hyprland.nix
-    ./hypridle.nix
-    ./hyprlock.nix
-    ../rofi/rofi.nix
-    ../waybar/waybar.nix
-    ../mako.nix
     ../batsignal.nix
     ../clipse.nix
+    ../rofi/rofi.nix
+    ../swaync.nix
+    ../waybar/waybar.nix
+    ./hypridle.nix
+    ./hyprland/hyprland.nix
+    ./hyprlock.nix
   ];
 }

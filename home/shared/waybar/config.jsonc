@@ -14,10 +14,29 @@
         "clock"
       ],
       "modules-right": [
-        "idle_inhibitor",
+        "group/toggle-group",
         "group/group-system-status",
         "group/group-power"
       ],
+      "group/toggle-group": {
+        "orientation": "inherit",
+        "modules": [
+          "custom/swaync",
+          "idle_inhibitor"
+        ]
+      },
+      "custom/swaync": {
+        "format": " 󰂚 ",
+        "on-click": "swaync-client -t"
+      },
+      "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+          "activated": " 󰅶 ",
+          "deactivated": " 󰾪 "
+        },
+        "start-activated": false
+      },
       "group/group-power": {
         "orientation": "inherit",
         "drawer": {
@@ -52,19 +71,10 @@
         "tooltip": false,
         "on-click": "shutdown now"
       },
-      "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-          "activated": " 󰅶 ",
-          "deactivated": " 󰾪 "
-        },
-        "start-activated": false
-      },
       "clock": {
         "interval": 60,
-        "format": "<b>{:%H:%M}</b>",
-        "format-alt": "{:%Y-%m-%d}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+        "tooltip": false,
+        "format": "{:%H:%M %A, %B %d, %Y}"
       },
       "group/group-system-status": {
         "orientation": "inherit",
