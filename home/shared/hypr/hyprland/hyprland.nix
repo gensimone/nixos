@@ -363,10 +363,11 @@
         "float,class:^(io.missioncenter.MissionCenter)$"
         "float,class:^(xdg-desktop-portal-gtk)$"
         "float,class:^(pulsemixer)$"
-        "float,title:^(Syncthing Tray)$"
+        "float,title:((.*)Syncthing Tray(.*))"
 
         "size 620 650,class:^(clipse)$"
         "size 620 350,class:^(pulsemixer)$"
+        "size 830 630,title:((.*)Syncthing Tray(.*))"
       ];
 
       windowrule = [
