@@ -9,5 +9,5 @@
     luajitPackages.luarocks
   ];
 
-  xdg.configFile."nvim".source = config.lib.file.mkOutOfStoreSymlink /home/simone/.config/nixos/home/shared/nvim/nvim;
+  xdg.configFile."nvim".source = config.lib.file.mkOutOfStoreSymlink /home/simone/sources/personal/nixos/home/shared/nvim/nvim;
 }

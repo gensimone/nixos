@@ -28,7 +28,7 @@
 
   environment.systemPackages = with pkgs; [ ];
   environment.shellAliases = {
-    sys-rebuild = "nixos-rebuild switch --flake ~/.config/nixos#latitude5400 --use-remote-sudo";
+    sys-rebuild = "nixos-rebuild switch --flake ~/sources/personal/nixos#latitude5400 --use-remote-sudo";
   };
 
   services = {

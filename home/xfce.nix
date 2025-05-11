@@ -20,7 +20,7 @@
   home.homeDirectory = "/home/simone";
 
   home.shellAliases = {
-    home-rebuild = "home-manager switch --flake ~/.config/nixos#xfce";
+    home-rebuild = "home-manager switch --flake ~/sources/personal/nixos#xfce";
   };
 
   home.packages = [];

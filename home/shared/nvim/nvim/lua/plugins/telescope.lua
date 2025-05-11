@@ -18,7 +18,7 @@ return {
       { '<leader>hfg', ':Telescope live_grep   search_dirs={"~"}<cr>', mode = { 'n' }, desc = 'Buffers' },
       { '<leader>hfw', ':Telescope grep_string search_dirs={"~"}<cr>', mode = { 'n' }, desc = 'Recent Files' },
       { '<leader>fce', ':Telescope find_files  search_dirs={"~/.config/nvim"}<cr>',  mode = { 'n' }, desc = 'Neovim Config Files' },
-      { '<leader>fcn', ':Telescope find_files  search_dirs={"~/.config/nixos"}<cr>', mode = { 'n' }, desc = 'NixOS Config Files' },
+      { '<leader>fcn', ':Telescope find_files  search_dirs={"~/sources/personal/nixos"}<cr>', mode = { 'n' }, desc = 'NixOS Config Files' },
     },
     config = function()
       require('telescope').setup({

@@ -29,7 +29,7 @@
 
   environment.systemPackages = with pkgs; [ ];
   environment.shellAliases = {
-    sys-rebuild = "nixos-rebuild switch --flake ~/.config/nixos#optiplex5050 --use-remote-sudo";
+    sys-rebuild = "nixos-rebuild switch --flake ~/sources/personal/nixos#optiplex5050 --use-remote-sudo";
   };
 
   # This value determines the NixOS release from which the default

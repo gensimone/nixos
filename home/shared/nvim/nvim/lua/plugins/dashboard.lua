@@ -35,7 +35,7 @@ return {
             { action = 'Telescope live_grep',                                   desc = ' Find Text',    icon = '   ', key = '<leader> f g' },
             { action = 'TodoTelescope',                                         desc = ' Todos',        icon = '   ', key = '<leader> f t' },
             { action = 'Telescope find_files search_dirs={"~/.config/nvim"}',   desc = ' Neovim',       icon = '   ', key = '<leader> f c e' },
-            { action = 'Telescope find_files search_dirs={"~/.config/nixos/"}', desc = ' NixOS',        icon = '   ', key = '<leader> f c n' },
+            { action = 'Telescope find_files search_dirs={"~/sources/personal/nixos"}', desc = ' NixOS',        icon = '   ', key = '<leader> f c n' },
             { action = function() vim.api.nvim_input('<cmd>qa<cr>') end,        desc = ' Quit',         icon = '   ', key = 'q'},
           }, footer = {},
           -- Center the Dashboard on the vertical (from top to bottom)
