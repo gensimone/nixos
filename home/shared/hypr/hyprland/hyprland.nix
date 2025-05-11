@@ -152,6 +152,10 @@
         "$mod, e, exec, pypr toggle filemanager"
         "$mod CTRL, m, exec, pypr toggle music"
 
+        # screenshots
+        "$mod CTRL, s, exec, sh -c 'grim -g \"$(slurp)\" - | swappy -f -'"
+        "$mod, s, exec, grim - | swappy -f -"
+
         # general binds
         "$mod, w, toggleFloating"
         "$mod, f, fullscreen"
@@ -205,6 +209,7 @@
 
         # toggle waybar
         # "$mod, t, exec, kill -USR1 $(pgrep waybar)"
+        "$mod CTRL, t, exec, pgrep waybar && kill $(pidof waybar) || waybar"
 
         # special workspace binds
         # "$mod SHIFT, s, movetoworkspacesilent, special"
