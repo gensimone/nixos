@@ -38,6 +38,10 @@ window#waybar {
   color: @error_color;
 }
 
+#group-audio.custom-power {
+  color: @error_color;
+}
+
 #bluetooth,
 #workspaces,
 #taskbar,

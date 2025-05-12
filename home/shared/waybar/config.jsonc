@@ -26,8 +26,15 @@
         ]
       },
       "custom/swaync": {
-        "format": " 󰂚 ",
-        "on-click": "swaync-client -t"
+        "format": " {icon} ",
+        "on-click": "swaync-client -t",
+        "exec": "~/.config/waybar/scripts/swaync.sh",
+        "interval": 5,
+        "format-icons": {
+          "default": "󰂚",
+          "present": "󱅫",
+          "do-not-disturb": "󰂛"
+        }
       },
       "idle_inhibitor": {
         "format": "{icon}",
