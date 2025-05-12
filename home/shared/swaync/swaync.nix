@@ -64,7 +64,7 @@
               command = "systemctl poweroff";
             }
             {
-              label = "󰜉";
+              label = "";
               command = "systemctl reboot";
             }
             {
