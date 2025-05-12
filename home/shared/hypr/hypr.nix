@@ -6,7 +6,6 @@
     brightnessctl        # This program allows you read and control device brightness
     grim                 # Grab images from a Wayland compositor
     hyprpicker           # Wlroots-compatible Wayland color picker that does not suck
-    kooha                # Elegantly record your screen
     libnotify            # Library that sends desktop notifications to a notification daemon
     networkmanagerapplet # NetworkManager control applet for GNOME
     pcmanfm              # File manager with GTK interface
@@ -25,7 +24,7 @@
     ../batsignal.nix
     ../clipse.nix
     ../rofi/rofi.nix
-    ../swaync.nix
+    ../swaync/swaync.nix
     ../waybar/waybar.nix
     ../swappy/swappy.nix
     ./hypridle.nix
