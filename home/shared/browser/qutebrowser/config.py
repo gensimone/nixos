@@ -1,13 +1,29 @@
 config.load_autoconfig(False)
+
+# bindings
 config.bind('zi', 'zoom-in')
 config.bind('zo', 'zoom-out')
+
+# content / privacy
+config.set("content.webgl", False, "*")
+config.set("content.autoplay", False, "*")
+config.set("content.geolocation", False)
+
+# cookie
+config.set("content.cookies.accept", "all")
+config.set("content.cookies.store", True)
+
 c.auto_save.session = True
 c.backend = "webengine"
 c.changelog_after_upgrade = "patch"
 c.colors.webpage.darkmode.enabled = True
-c.content.blocking.method = "both"
 c.editor.command = ["kitty", "nvim", "{file}"]
 c.tabs.show = "multiple"
+
+# require python adblock
+c.content.blocking.method = "both"
+
+# custom urls
 c.url.searchengines['DEFAUL'] = "https://duckduckgo.com/?q={}"
 c.url.searchengines['amazon'] = "https://amazon.com/s?k={}"
 c.url.searchengines['nixopt'] = "https://mynixos.com/search?q={}"
@@ -18,9 +34,12 @@ c.url.searchengines['translate'] = "https://translate.google.com/?sl=en&tl=it&te
 c.url.searchengines['wallpaper'] = "https://alphacoders.com/search/view?q={}&type=wallpaper"
 c.url.searchengines['youtube'] = "https://youtube.com/results?search_query={}"
 c.url.searchengines['netflix'] = "https://www.netflix.com/search?q={}"
+
+# fonts
 c.fonts.default_family = "Fira Code Nerd Font"
 c.fonts.default_size = "11pt"
 
+# colorscheme
 # gruvbox dark hard qutebrowser theme by Florian Bruhin <me@the-compiler.org>
 #
 # Originally based on:

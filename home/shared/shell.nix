@@ -2,6 +2,7 @@
 
 let
   shellAliases = {
+    f = "fzf --bind 'enter:become(vim {})' --height 40% --border";
     cp = "cp -i";
     df = "df -h";
     du = "du -h";
@@ -15,19 +16,30 @@ let
     clean-boot = "sudo /run/current-system/bin/switch-to-configuration boot";
     clean-all = "sudo nix-collect-garbage -d && clean-boot";
     build-all = "sys-rebuild && home-rebuild";
+    gitup = "git add . && git commit -m 'Update' && git push";
   };
 in {
-  programs.zsh = {
-    enable = true;
-    shellAliases = shellAliases;
-    initContent = "set -o vi";
-    sessionVariables = {
-      EDITOR = "nvim";
-      VISUAL = "nvim";
+  programs = {
+    zsh = {
+      enable = true;
+      shellAliases = shellAliases;
+      initContent = "set -o vi";
+    };
+    bash = {
+      enable = true;
+      shellAliases = shellAliases;
+      initExtra = "set -o vi";
     };
   };
 
-  home.sessionPath = [ "$HOME/.local/bin" ];
+  home.sessionVariables = {
+    EDITOR = "nvim";
+    VISUAL = "nvim";
+  };
+
+  home.sessionPath = [
+    "$HOME/.local/bin"
+  ];
 
   programs.starship = {
     enable = true;
@@ -47,14 +59,15 @@ in {
     tgpt     # ChatGPT in terminal without needing API keys
     tree     # Command to produce a depth indented directory listing
     wget     # Tool for retrieving files using HTTP, HTTPS, and FTP
+    fzf      # Command-line fuzzy finder written in Go
   ];
 
   imports = [
     ./fastfetch/fastfetch.nix
     ./git.nix
+    ./irssi/irssi.nix
     ./nvim/nvim.nix
     ./ranger/ranger.nix
     ./tmux/tmux.nix
-    ./irssi/irssi.nix
   ];
 }

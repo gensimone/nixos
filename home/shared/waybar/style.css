@@ -9,8 +9,10 @@
 }
 
 window#waybar {
-  background: transparent;
-  color: transparent;
+  /* background: transparent; */
+  /* color: transparent; */
+  color: @theme_fg_color;
+  background: @theme_bg_color;
   margin: 10px 10px;
 }
 

@@ -52,13 +52,14 @@
       exec-once = [
         "(sleep 5 && blueman-applet)"
         "(sleep 5 && megasync)"
-        "hyprctl dispatch exec [workspace special silent] firefox"
         "clipse -listen"
+        "hyprctl dispatch exec [workspace special silent] firefox"
         "hypridle"
-        "swaync"
         "nm-applet"
+        "pcmanfm --daemon-mode"
         "pypr"
         "soteria"
+        "swaync"
         "swayosd-server"
         "swww-daemon"
         "waybar"
@@ -104,8 +105,6 @@
         "noanim, hypicker"
         "noanim, selection"
         "blur,waybar"
-        "blur,rofi"
-        "ignorezero,rofi"
         "blur,notifications"
         "ignorezero,notifications"
         "blur,swaync-notification-window"
@@ -164,6 +163,7 @@
         # apps
         "$mod, a, exec, kitty --class pulsemixer pulsemixer"
         "$mod, c, exec, kitty --class clipse clipse"
+        "$mod, d, exec, kitty --class finder fzf --bind 'enter:become(kitty --class post-finder nvim {})' --height 100% --border"
 
         # switch workspaces
         "$mod, 0, workspace, 0"
@@ -232,8 +232,10 @@
         "$mod CTRL, p, exec, ~/.config/rofi/scripts/wallset.sh"
         "$mod CTRL, b, exec, ~/.config/rofi/scripts/book.sh"
 
-        # enable/disable animations
+        # scripts
         "$mod CTRL, a, exec, ~/.config/hypr/scripts/toggle_focus_mode.sh"
+        "$mod SHIFT, i, exec, ~/.config/hypr/scripts/gaps_control.sh i"
+        "$mod SHIFT, u, exec, ~/.config/hypr/scripts/gaps_control.sh i"
       ];
 
       bindm = [
@@ -336,6 +338,7 @@
         "opacity 0.90 0.90,class:^(clipse)$"
 
         "float,class:(clipse)"
+        "float,class:(finder)"
         "float,title:^(About Mozilla Firefox)$"
         "float,class:^(firefox)$,title:^(Picture-in-Picture)$"
         "float,class:^(firefox)$,title:^(Library)$"
@@ -367,9 +370,13 @@
         "float,class:^(io.missioncenter.MissionCenter)$"
         "float,class:^(xdg-desktop-portal-gtk)$"
         "float,class:^(pulsemixer)$"
+        "float,class:^(post-finder)$"
+        "float,title:^(Removable medium is inserted)$,class:^(pcmanfm)$"
         "float,title:((.*)Syncthing Tray(.*))"
 
         "size 620 650,class:^(clipse)$"
+        "size 620 400,class:^(finder)$"
+        "size 1250 830,class:^(post-finder)$"
         "size 620 350,class:^(pulsemixer)$"
         "size 830 630,title:((.*)Syncthing Tray(.*))"
       ];
