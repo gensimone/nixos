@@ -233,7 +233,7 @@
         "$mod CTRL, b, exec, ~/.config/rofi/scripts/book.sh"
 
         # enable/disable animations
-        "$mod CTRL, a, exec, ~/.config/hypr/scripts/toggle_focus_mode.sh"
+        "$mod CTRL, a, exec, ~/.config/hypr/scripts/toggle_animations.sh"
       ];
 
       bindm = [

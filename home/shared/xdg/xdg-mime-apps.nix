@@ -2,9 +2,10 @@
 
 {
   xdg.mimeApps = {
+    enable = true;
     defaultApplications = {
-      "text/plain" = [ "neovim.desktop" ];
-      "application/pdf" = [ "zathura.desktop" ];
+      "text/plain" = [ "nvim.desktop" ];
+      "applicaton/pdf" = [ "org.pwmt.zathura.desktop" ];
       "image/*" = [ "swayimg.desktop" ];
       "video/*" = [ "mpv.desktop" ];
     };
