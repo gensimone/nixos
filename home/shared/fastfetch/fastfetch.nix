@@ -11,7 +11,7 @@
         type = "kitty";
         height = 18;
         padding = {
-          top = 1;
+          top = 0;
         };
       };
       display = {
