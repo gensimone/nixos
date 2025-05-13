@@ -1,6 +1,6 @@
 #!/bin/sh
 
-offset=1
+offset=5
 gaps_in=$(hyprctl getoption general:gaps_in | head -1 | cut -d ' ' -f 3)
 gaps_out=$(hyprctl getoption general:gaps_out | head -1 | cut -d ' ' -f 3)
 

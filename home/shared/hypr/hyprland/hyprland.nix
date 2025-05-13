@@ -235,7 +235,7 @@
         # scripts
         "$mod CTRL, a, exec, ~/.config/hypr/scripts/toggle_focus_mode.sh"
         "$mod SHIFT, i, exec, ~/.config/hypr/scripts/gaps_control.sh i"
-        "$mod SHIFT, u, exec, ~/.config/hypr/scripts/gaps_control.sh i"
+        "$mod SHIFT, u, exec, ~/.config/hypr/scripts/gaps_control.sh "
       ];
 
       bindm = [
