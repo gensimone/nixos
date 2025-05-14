@@ -4,7 +4,7 @@
   users.users.simone = {
     isNormalUser = true;
     description = "Simone";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "wireshark" "networkmanager" "wheel" ];
     packages = with pkgs; [];
   };
 

@@ -119,28 +119,43 @@
         enabled = 1;
 
         bezier = [
-          "default, 0.05, 0.9, 0.1, 1.05"
-          "wind, 0.05, 0.9, 0.1, 1.05"
-          "overshot, 0.13, 0.99, 0.29, 1.08"
-          "liner, 1, 1, 1, 1"
+          "default, 0.16, 1, 0.3, 1"
         ];
 
-        # animation = [
-        #   "windows, 1, 7, wind, popin"
-        #   "windowsIn, 1, 7, overshot, popin"
-        #   "windowsOut, 1, 5, overshot, popin"
-        #   "windowsMove, 1, 6, overshot, slide"
-        #   "layers, 1, 5, default, popin"
-        #   "fadeIn, 1, 10, default"
-        #   "fadeOut, 1, 10, default"
-        #   "fadeSwitch, 1, 10, default"
-        #   "fadeShadow, 1, 10, default"
-        #   "fadeDim, 1, 10, default"
-        #   "fadeLayers, 1, 10, default"
-        #   "workspaces, 1, 7, overshot, slidevert"
-        #   "border, 1, 1, liner"
-        #   "borderangle, 1, 30, liner"
-        # ];
+        animation = [
+          # styles: slide, popin, gnomed
+          "windows, 1, 8, default, gnomed"
+          "windowsIn, 1, 8, default, gnomed"
+          "windowsOut, 1, 8, default, gnomed"
+          "windowsMove, 1, 8, default, gnomed"
+
+          # styles: slide, popin, fade
+          "layers, 1, 5, default, popin"
+          "layersIn, 1, 5, default, popin"
+          "layersOut, 1, 5, default, popin"
+
+          "fade, 1, 10, default"
+          "fadeIn, 1, 10, default"
+          "fadeOut, 1, 10, default"
+          "fadeSwitch, 1, 10, default"
+          "fadeShadow, 1, 10, default"
+          "fadeDim, 1, 10, default"
+          "fadeLayers, 1, 10, default"
+          "fadeLayersIn, 1, 10, default"
+          "fadeLayersOut, 1, 10, default"
+
+           # styles: slide, slidevert, fade, slidefade, slidefadevert
+          "workspaces, 1, 10, default, slidefade 80%"
+          "workspacesIn, 1, 10, default, slidefade 80%"
+          "workspacesOut, 1, 10, default, slidefade 80%"
+          "specialWorkspace, 1, 10, default, slidefade 80%"
+          "specialWorkspaceOut, 1, 10, default, slidefade 80%"
+          "specialWorkspaceIn, 1, 10, default, slidefade 80%"
+
+          # styles: once (default), loop
+          "border, 1, 1, default"
+          "borderangle, 1, 30, default, once"
+        ];
       };
 
       "$mod" = "ALT";

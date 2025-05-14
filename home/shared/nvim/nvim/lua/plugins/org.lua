@@ -45,7 +45,7 @@ return {
             },
             ['core.concealer'] = {
               config = {
-                folds = true,
+                folds = false,
                 -- Possible values are: basic, diamond, varied.
                 icon_preset = "basic",
                 -- When set to auto, Neorg will open all folds when opening new documents

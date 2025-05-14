@@ -158,15 +158,15 @@
           "0": "⽸"
         },
         "persistent-workspaces": {
-          "*": 9
+          "*": 4
         }
       },
       "group/group-audio": {
         "orientation": "inherit",
         "modules": [
           "pulseaudio#mic",
-          "pulseaudio#sink",
-          "cava"
+          "pulseaudio#sink"
+          // "cava"
         ]
       },
       "pulseaudio#mic": {
