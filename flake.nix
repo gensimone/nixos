@@ -6,9 +6,10 @@
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+    nvf.url = "github:notashelf/nvf";
   };
 
-  outputs = { self, nixpkgs, home-manager, spicetify-nix, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, spicetify-nix, nvf, ... }@inputs:
   let
     lib = nixpkgs.lib;
     system = "x86_64-linux";
@@ -29,18 +30,11 @@
       };
     };
     homeConfigurations = {
-      xfce = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-        extraSpecialArgs = { inherit inputs; };
-        modules = [
-          spicetify-nix.homeManagerModules.spicetify
-          ./home/xfce.nix
-        ];
-      };
       hyprland = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = { inherit inputs; };
         modules = [
+          nvf.homeManagerModules.default
           spicetify-nix.homeManagerModules.spicetify
           ./home/hyprland.nix
         ];

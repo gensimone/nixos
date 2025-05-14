@@ -66,7 +66,7 @@ in {
     ./fastfetch/fastfetch.nix
     ./git.nix
     ./irssi/irssi.nix
-    ./nvim/nvim.nix
+    ./nvim/nvf.nix
     ./ranger/ranger.nix
     ./tmux/tmux.nix
   ];
