@@ -101,6 +101,7 @@ in {
         "browser.urlbar.suggest.trending" = lock-false;
         "browser.urlbar.suggest.weather" = lock-false;
         "browser.urlbar.suggest.yelp" = lock-false;
+        "ui.key.menuAccessKeyFocuses" = lock-false;
       };
 
       ExtensionSettings = lib.mkMerge [ block-addons extensions ];
