@@ -5,6 +5,7 @@
     enable = true;
     setupOpts = {
       defaults = {
+        layout_strategy = "horizontal";
         color_devicons = true;
         entry_prefix = " ";
         initial_mode = "insert"; # or normal
@@ -18,7 +19,7 @@
         ];
         layout = {};
         # hidden, tail, absolute, smart, shorten, truncate
-        path_display = [ "absolute" ];
+        path_display = [ "smart" ];
         prompt_prefix = "  ";
         # reset, follow, row, closest, none
         selection_strategy = "reset";
