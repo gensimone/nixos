@@ -1,11 +1,11 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   users.users.simone = {
     isNormalUser = true;
     description = "Simone";
-    extraGroups = [ "wireshark" "networkmanager" "wheel" ];
-    packages = with pkgs; [];
+    extraGroups = [ "networkmanager" "wheel" ];
+    packages = [];
   };
 
   services.displayManager.autoLogin = {

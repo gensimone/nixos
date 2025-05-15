@@ -17,6 +17,7 @@
     swww                 # Efficient animated wallpaper daemon for wayland, controlled at runtime
     udiskie              # Removable disk automounter for udisks
     udisks               # Daemon, tools and libraries to access and manipulate disks, storage devices and technologies
+    waypaper             # GUI wallpaper setter for Wayland-based window managers
     wl-clipboard         # Command-line copy/paste utilities for Wayland
   ];
 

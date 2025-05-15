@@ -1,12 +1,11 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   imports = [
-    ./hardware-configuration.nix
     ../../shared/audio.nix
     ../../shared/bluetooth.nix
-    ../../shared/desktop/hyprland.nix
     ../../shared/fonts.nix
+    ../../shared/hyprland.nix
     ../../shared/networking/networking.nix
     ../../shared/options.nix
     ../../shared/power.nix
@@ -15,6 +14,8 @@
     ../../shared/timezone.nix
     ../../shared/user.nix
     ../../shared/virtualization.nix
+    ../../shared/wireshark.nix
+    ./hardware-configuration.nix
   ];
 
   boot = {
@@ -26,7 +27,7 @@
     };
   };
 
-  environment.systemPackages = with pkgs; [ ];
+  environment.systemPackages = [];
   environment.shellAliases = {
     sys-rebuild = "nixos-rebuild switch --flake ~/sources/personal/nixos#latitude5400 --use-remote-sudo";
   };

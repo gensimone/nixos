@@ -178,6 +178,7 @@
         # apps
         "$mod, a, exec, kitty --class pulsemixer pulsemixer"
         "$mod, c, exec, kitty --class clipse clipse"
+        "$mod CTRL, p, exec, waypaper"
         "$mod, d, exec, kitty --class finder fzf --bind 'enter:become(kitty --class post-finder nvim {})' --height 100% --border"
 
         # switch workspaces
@@ -244,7 +245,6 @@
         "$mod CTRL, l, movewindow, r"
 
         # other menus
-        "$mod CTRL, p, exec, ~/.config/rofi/scripts/wallset.sh"
         "$mod CTRL, b, exec, ~/.config/rofi/scripts/book.sh"
 
         # scripts
@@ -388,9 +388,11 @@
         "float,class:^(post-finder)$"
         "float,title:^(Removable medium is inserted)$,class:^(pcmanfm)$"
         "float,title:((.*)Syncthing Tray(.*))"
+        "float,class:^(waypaper)$"
 
         "size 620 650,class:^(clipse)$"
-        "size 620 400,class:^(finder)$"
+        "size 800 800,class:^(waypaper)$"
+        "size 1000 400,class:^(finder)$"
         "size 1250 830,class:^(post-finder)$"
         "size 620 350,class:^(pulsemixer)$"
         "size 830 630,title:((.*)Syncthing Tray(.*))"

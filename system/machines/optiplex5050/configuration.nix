@@ -1,11 +1,11 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   imports = [
     ./hardware-configuration.nix
     ../../shared/audio.nix
     ../../shared/bluetooth.nix
-    ../../shared/desktop/hyprland.nix
+    ../../shared/hyprland.nix
     ../../shared/fonts.nix
     ../../shared/networking/networking.nix
     ../../shared/options.nix
@@ -27,7 +27,7 @@
     };
   };
 
-  environment.systemPackages = with pkgs; [ ];
+  environment.systemPackages = [];
   environment.shellAliases = {
     sys-rebuild = "nixos-rebuild switch --flake ~/sources/personal/nixos#optiplex5050 --use-remote-sudo";
   };
