@@ -26,6 +26,11 @@
         };
       };
 
+      cursor = {
+        hide_on_key_press = true;
+        inactive_timeout = 0.5;
+      };
+
       gestures = {
         workspace_swipe = true;
         workspace_swipe_fingers = 3;

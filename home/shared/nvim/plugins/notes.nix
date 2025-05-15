@@ -13,7 +13,6 @@
       treesitter.enable = true;
       setupOpts = {
         load = {
-          "core.defaults".config = {};
           "core.qol.toc".config = {
             close_after_use = true;
             # Enter a ToC window opened manually (any ToC window not opened by auto_toc).

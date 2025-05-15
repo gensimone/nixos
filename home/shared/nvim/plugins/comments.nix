@@ -7,10 +7,12 @@
       setupOpts.mappings = {
         basic = false;  # wheter to enable basic mappings
         extra = false;  # wheter to enable extra mappings
-        # toggleSelectedLine = "<leader>/";
-        # toggleOpLeaderBlock = "<leader>/";
-        # toggleSelectedBlock = null;
-        # toggleOpSelectedBlock = null;
+        toggleCurrentLine = null;
+        toggleCurrentBlock = null;
+        toggleSelectedLine = null;
+        toggleOpLeaderBlock = null;
+        toggleSelectedBlock = null;
+        toggleOpSelectedBlock = null;
       };
     };
   };
