@@ -33,7 +33,7 @@
             "" ""
           ];
           center = [
-            { action = "NeovimProjectDiscover"; desc = " Projects"; icon = "   "; key = "<leader> f p"; }
+            { action = "Telescope Projects"; desc = " Projects"; icon = "   "; key = "<leader> f p"; }
             { action = "Telescope find_files"; desc = " Find File"; icon = "   "; key = "<leader> f f"; }
             { action = "Telescope oldfiles"; desc = " Recent Files"; icon = "   "; key = "<leader> f r"; }
             { action = "Telescope live_grep"; desc = " Find Text"; icon = "   "; key = "<leader> f g"; }

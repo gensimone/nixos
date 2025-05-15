@@ -29,6 +29,7 @@
     ./plugins/lsp.nix
     ./plugins/mini.nix
     ./plugins/notes.nix
+    ./plugins/notify.nix
     ./plugins/projects.nix
     ./plugins/snippets.nix
     ./plugins/telescope.nix

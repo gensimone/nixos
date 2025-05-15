@@ -29,16 +29,13 @@
       };
     };
     mappings = {
-      buffers = "<leader>fb";
-      findFiles = "<leader>ff";
-      findProjects = "<leader>fp";
-      liveGrep = "<leader>fg";
-
-      open = "<leader>ft";
-
-      # lsp stuff
-      diagnostics = "<leader>fld";
-      lspDefinitions = "<leader>flD";
+      buffers = null;
+      findFiles = null;
+      findProjects = null;
+      liveGrep = null;
+      open = null;
+      diagnostics = null;
+      lspDefinitions = null;
       lspDocumentSymbols = null;
       lspImplementations = null;
       lspReferences = null;
