@@ -15,6 +15,7 @@
     megasync          # Easy automated syncing between your computers and your MEGA Cloud Drive
     mpv               # General-purpose media player, fork of MPlayer and mplayer2
     obs-studio        # Free and open source software for video recording and live streaming
+    playerctl         # Command-line utility and library for controlling media players that implement MPRIS
     qbittorrent       # Featureful free software BitTorrent client
     rsync             # Fast incremental file transfer utility
     telegram-desktop  # Telegram Desktop messaging app
