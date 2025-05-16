@@ -12,7 +12,6 @@
     pulsemixer           # Cli and curses mixer for pulseaudio
     slurp                # Select a region in a Wayland compositor
     soteria              # Polkit authentication agent written in GTK designed to be used with any desktop environment
-    swayimg              # Image viewer for Sway/Wayland
     swayosd              # GTK based on screen display for keyboard shortcuts
     swww                 # Efficient animated wallpaper daemon for wayland, controlled at runtime
     udiskie              # Removable disk automounter for udisks
@@ -25,9 +24,10 @@
     ../batsignal.nix
     ../clipse.nix
     ../rofi/rofi.nix
+    ../swappy/swappy.nix
+    ../swayimg.nix
     ../swaync/swaync.nix
     ../waybar/waybar.nix
-    ../swappy/swappy.nix
     ./hypridle.nix
     ./hyprland/hyprland.nix
     ./hyprlock.nix

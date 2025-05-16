@@ -159,7 +159,7 @@
 
           # styles: once (default), loop
           "border, 1, 1, default"
-          "borderangle, 1, 30, default, once"
+          "borderangle, 1, 1, default, once"
         ];
       };
 
@@ -356,9 +356,11 @@
         "opacity 0.80 0.80,class:^(io.github.flattool.Warehouse)$"
         "opacity 0.80 0.80,class:^(io.github.flattool.Warehouse)$"
         "opacity 0.90 0.90,class:^(clipse)$"
+        "opacity,1.00 1.00,class:(swayimg)"
 
         "float,class:(clipse)"
         "float,class:(finder)"
+        "float,class:(swayimg)"
         "float,title:^(About Mozilla Firefox)$"
         "float,class:^(firefox)$,title:^(Picture-in-Picture)$"
         "float,class:^(firefox)$,title:^(Library)$"
@@ -395,6 +397,7 @@
         "float,title:((.*)Syncthing Tray(.*))"
         "float,class:^(waypaper)$"
 
+        "size 800 800,class:(swayimg)"
         "size 620 650,class:^(clipse)$"
         "size 800 800,class:^(waypaper)$"
         "size 1000 400,class:^(finder)$"
