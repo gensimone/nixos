@@ -10,7 +10,6 @@
     ./shared/python/python.nix
     ./shared/shell.nix
     ./shared/spicetify.nix
-    ./shared/syncthing.nix
     ./shared/theme.nix
     ./shared/wallpapers/wallpapers.nix
     ./shared/xdg/xdg.nix

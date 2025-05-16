@@ -19,7 +19,7 @@
         ];
         layout = {};
         # hidden, tail, absolute, smart, shorten, truncate
-        path_display = [ "smart" ];
+        path_display = [ "absolute" ];
         prompt_prefix = "  ";
         # reset, follow, row, closest, none
         selection_strategy = "reset";

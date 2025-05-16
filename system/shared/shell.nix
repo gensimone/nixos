@@ -1,8 +1,7 @@
 { pkgs, ... }:
 
 {
-  programs.zsh.enable = true;
-  users.defaultUserShell = pkgs.zsh;
+  users.defaultUserShell = pkgs.bash;
   environment = {
     variables = {
       EDITOR = "vi";

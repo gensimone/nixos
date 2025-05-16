@@ -17,11 +17,13 @@ let
     clean-all = "sudo nix-collect-garbage -d && clean-boot";
     build-all = "sys-rebuild && home-rebuild";
     gitup = "git add . && git commit -m 'Update' && git push";
+    cpr = "rsync --archive -hh --partial --info=stats1,progress2 --modify-window=1 \"$@\"";
+    mvr = "rsync --archive -hh --partial --info=stats1,progress2 --modify-window=1 --remove-source-files \"$@\"";
   };
 in {
   programs = {
     zsh = {
-      enable = true;
+      enable = false;
       shellAliases = shellAliases;
       initContent = "set -o vi";
     };
