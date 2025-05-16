@@ -4,7 +4,7 @@
   programs.zathura = {
     enable = true;
     options = {
-      font = "Fira Code Nerd Font 11";
+      font = "CaskaydiaCove Nerd Font 11";
       notification-error-bg = "rgba(40,40,40,1)";
       notification-error-fg = "rgba(251,73,52,1)";
       notification-warning-bg = "rgba(40,40,40,1)";

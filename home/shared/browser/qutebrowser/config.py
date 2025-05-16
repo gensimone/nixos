@@ -36,7 +36,7 @@ c.url.searchengines['youtube'] = "https://youtube.com/results?search_query={}"
 c.url.searchengines['netflix'] = "https://www.netflix.com/search?q={}"
 
 # fonts
-c.fonts.default_family = "Fira Code Nerd Font"
+c.fonts.default_family = "CaskaydiaCove Nerd Font"
 c.fonts.default_size = "11pt"
 
 # colorscheme

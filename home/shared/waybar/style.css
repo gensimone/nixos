@@ -1,7 +1,7 @@
 * {
     border: none;
     border-radius: 0px;
-    font-family: "Fira Code Nerd Font";
+    font-family: "CaskaydiaCove Nerd Font";
     font-size: 14px;
     min-height: 0px;
     padding: 0px 3px;
@@ -11,8 +11,8 @@
 window#waybar {
   /* background: transparent; */
   /* color: transparent; */
-  color: @theme_fg_color;
-  background: @theme_bg_color;
+  color: transparent;
+  background: transparent;
   margin: 10px 10px;
 }
 
@@ -56,6 +56,9 @@ window#waybar {
   margin: 4px 5px;
   padding: 7px 5px;
   color: @theme_fg_color;
-  background: shade(alpha(@borders, 0.45), 1.25);
-  border-radius: 8px;
+  background: shade(alpha(@theme_bg_color, 0.8), 1.25);
+  border-color: @borders;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 15px;
 }

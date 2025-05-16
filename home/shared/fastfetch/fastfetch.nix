@@ -9,9 +9,9 @@
       logo = {
         source = "~/.config/fastfetch/logo.png";
         type = "kitty";
-        height = 18;
+        height = 20;
         padding = {
-          top = 0;
+          top = 2;
         };
       };
       display = {
