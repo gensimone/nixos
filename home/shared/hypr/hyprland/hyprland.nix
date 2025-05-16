@@ -81,14 +81,14 @@
       };
 
       decoration = {
-        rounding = 6;
+        rounding = 8;
         dim_special = 0.3;
-        active_opacity = 0.95;
-        inactive_opacity = 0.9;
+        active_opacity = 1.0;
+        inactive_opacity = 1.0;
 
         blur = {
-          enabled = true;
-          size = 6;
+          enabled = false;
+          size = 10;
           passes = 3;
           new_optimizations = "on";
           ignore_opacity = "on";
@@ -106,18 +106,7 @@
         };
       };
 
-      layerrule = [
-        "noanim, hypicker"
-        "noanim, selection"
-        "blur,waybar"
-        "blur,notifications"
-        "ignorezero,notifications"
-        "blur,swaync-notification-window"
-        "ignorezero,swaync-notification-window"
-        "blur,swaync-control-center"
-        "ignorezero,swaync-control-center"
-        "blur,logout_dialog"
-      ];
+      layerrule = [];
 
       # animation = NAME, ONOFF, SPEED, CURVE [,STYLE]
       animations = {
@@ -299,65 +288,6 @@
       ];
 
       windowrulev2 = [
-        "opacity 0.90 0.90,class:^(firefox)$"
-        "opacity 0.90 0.90,class:^(Google-chrome)$"
-        "opacity 0.90 0.90,class:^(Brave-browser)$"
-        "opacity 0.80 0.80,class:^(code-oss)$"
-        "opacity 0.80 0.80,class:^([Cc]ode)$"
-        "opacity 0.80 0.80,class:^(code-url-handler)$"
-        "opacity 0.80 0.80,class:^(code-insiders-url-handler)$"
-        "opacity 0.85 0.85,class:^(kitty)$"
-        "opacity 0.90 0.90,class:^(kitty-music)$"
-        "opacity 0.90 0.90,class:^(kitty-filemanager)$"
-        "opacity 0.90 0.90,class:^(kitty-dropterm)$"
-        "opacity 0.70 0.70,class:^(pulsemixer)$"
-        "opacity 0.80 0.80,class:^(org.kde.dolphin)$"
-        "opacity 0.80 0.80,class:^(org.kde.ark)$"
-        "opacity 0.80 0.80,class:^(nwg-look)$"
-        "opacity 0.80 0.80,class:^(qt5ct)$"
-        "opacity 0.80 0.80,class:^(qt6ct)$"
-        "opacity 0.80 0.80,class:^(kvantummanager)$"
-        "opacity 0.80 0.70,class:^(org.pulseaudio.pavucontrol)$"
-        "opacity 0.80 0.70,class:^(blueman-manager)$"
-        "opacity 0.80 0.70,class:^(.blueman-manager-wrapped)$"
-        "opacity 0.80 0.70,class:^(nm-applet)$"
-        "opacity 0.80 0.70,class:^(org.pwmt.zathura)$"
-        "opacity 0.80 0.70,class:^(nm-connection-editor)$"
-        "opacity 0.80 0.70,class:^(org.kde.polkit-kde-authentication-agent-1)$"
-        "opacity 0.80 0.70,class:^(polkit-gnome-authentication-agent-1)$"
-        "opacity 0.80 0.70,class:^(org.freedesktop.impl.portal.desktop.gtk)$"
-        "opacity 0.80 0.70,class:^(org.freedesktop.impl.portal.desktop.hyprland)$"
-        "opacity 0.70 0.70,class:^([Ss]team)$"
-        "opacity 0.70 0.70,class:^(steamwebhelper)$"
-        "opacity 0.70 0.70,class:^([Ss]potify)$"
-        "opacity 0.70 0.70,initialTitle:^(Spotify Free)$"
-        "opacity 0.70 0.70,initialTitle:^(Spotify Premium)$"
-        "opacity 0.70 0.70,initialTitle:^(nz.co.mega.)$"
-        "opacity 0.90 0.90,class:^(org.telegram.desktop)$"
-        "opacity 0.90 0.90,class:^(com.github.rafostar.Clapper)$"
-        "opacity 0.80 0.80,class:^(com.github.tchx84.Flatseal)$"
-        "opacity 0.80 0.80,class:^(hu.kramo.Cartridges)$"
-        "opacity 0.80 0.80,class:^(com.obsproject.Studio)$"
-        "opacity 0.80 0.80,class:^(gnome-boxes)$ # Boxes-Gtk"
-        "opacity 0.80 0.80,class:^(vesktop)$"
-        "opacity 0.80 0.80,class:^(discord)$"
-        "opacity 0.80 0.80,class:^(legcord)$"
-        "opacity 0.80 0.80,class:^(WebCord)$"
-        "opacity 0.80 0.80,class:^(ArmCord)$"
-        "opacity 0.80 0.80,class:^(app.drey.Warp)$"
-        "opacity 0.80 0.80,class:^(net.davidotek.pupgui2)$"
-        "opacity 0.80 0.80,class:^(yad)$"
-        "opacity 0.80 0.80,class:^(Signal)$"
-        "opacity 0.80 0.80,class:^(io.github.alainm23.planify)$"
-        "opacity 0.80 0.80,class:^(io.gitlab.theevilskeleton.Upscaler)$"
-        "opacity 0.80 0.80,class:^(com.github.unrud.VideoDownloader)$"
-        "opacity 0.80 0.80,class:^(io.gitlab.adhami3310.Impression)$"
-        "opacity 0.80 0.80,class:^(io.missioncenter.MissionCenter)$"
-        "opacity 0.80 0.80,class:^(io.github.flattool.Warehouse)$"
-        "opacity 0.80 0.80,class:^(io.github.flattool.Warehouse)$"
-        "opacity 0.90 0.90,class:^(clipse)$"
-        "opacity,1.00 1.00,class:(swayimg)"
-
         "float,class:(clipse)"
         "float,class:(finder)"
         "float,class:(swayimg)"

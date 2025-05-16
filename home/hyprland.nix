@@ -5,16 +5,16 @@
     ./shared/browser/browser.nix
     ./shared/cmus.nix
     ./shared/hypr/hypr.nix
-    ./shared/kitty/kitty.nix
+    ./shared/kitty.nix
     ./shared/programs.nix
     ./shared/python/python.nix
     ./shared/shell.nix
     ./shared/spicetify.nix
     ./shared/theme.nix
     ./shared/wallpapers/wallpapers.nix
+    ./shared/waypaper/waypaper.nix
     ./shared/xdg/xdg.nix
     ./shared/zathura.nix
-    ./shared/waypaper/waypaper.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
