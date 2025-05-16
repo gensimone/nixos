@@ -30,6 +30,6 @@
     ../waybar/waybar.nix
     ./hypridle.nix
     ./hyprland/hyprland.nix
-    ./hyprlock.nix
+    ./hyprlock/hyprlock.nix
   ];
 }

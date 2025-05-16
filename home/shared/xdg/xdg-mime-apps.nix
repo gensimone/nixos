@@ -8,6 +8,7 @@
       "application/pdf" = [ "org.pwmt.zathura.desktop" ];
       "image/png" = [ "swayimg.desktop" ];
       "image/jpeg" = [ "swayimg.desktop" ];
+      "image/webp" = [ "swayimg.desktop" ];
       "image/jpg" = [ "swayimg.desktop" ];
       "video/*" = [ "mpv.desktop" ];
     };
