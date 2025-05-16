@@ -15,6 +15,7 @@
     ./shared/wallpapers/wallpapers.nix
     ./shared/xdg/xdg.nix
     ./shared/zathura.nix
+    ./shared/waypaper/waypaper.nix
   ];
 
   nixpkgs.config.allowUnfree = true;

@@ -2,19 +2,21 @@
 
 {
   imports = [
-    ./hardware-configuration.nix
     ../../shared/audio.nix
     ../../shared/bluetooth.nix
-    ../../shared/hyprland.nix
     ../../shared/fonts.nix
+    ../../shared/hyprland.nix
     ../../shared/networking/networking.nix
     ../../shared/options.nix
+    ../../shared/power.nix
     ../../shared/programs.nix
     ../../shared/shell.nix
     ../../shared/steam.nix
     ../../shared/timezone.nix
     ../../shared/user.nix
     ../../shared/virtualization.nix
+    ../../shared/wireshark.nix
+    ./hardware-configuration.nix
   ];
 
   boot = {
