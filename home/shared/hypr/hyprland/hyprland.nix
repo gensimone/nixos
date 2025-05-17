@@ -73,7 +73,7 @@
       general = {
         gaps_in = 8;
         gaps_out = 23;
-        border_size = 4;
+        border_size = 3;
         layout = "dwindle";
         resize_on_border = true;
         "col.active_border" = "rgba(649264ff) rgba(272a2cff) 45deg";
@@ -106,7 +106,19 @@
         };
       };
 
-      layerrule = [];
+      layerrule = [
+        "ignorezero,notifications"
+        "ignorezero,rofi"
+        "ignorezero,swaync-control-center"
+        "ignorezero,swaync-notification-window"
+
+        "blur,notifications"
+        "blur,rofi"
+        "blur,swaync-control-center"
+        "blur,swaync-notification-window"
+
+        "animation [gnomed],swaync-control-center"
+      ];
 
       # animation = NAME, ONOFF, SPEED, CURVE [,STYLE]
       animations = {
@@ -147,8 +159,8 @@
           "specialWorkspaceIn, 1, 10, default, slidefade 80%"
 
           # styles: once (default), loop
-          "border, 1, 1, default"
-          "borderangle, 1, 1, default, once"
+          "border, 0, 1, default"
+          "borderangle, 0, 1, default, once"
         ];
       };
 
