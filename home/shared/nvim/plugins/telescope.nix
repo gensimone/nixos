@@ -18,13 +18,10 @@
           "result/"
         ];
         layout = {};
-        # hidden, tail, absolute, smart, shorten, truncate
-        path_display = [ "absolute" ];
+        path_display = [ "absolute" ]; # hidden, tail, absolute, smart, shorten, truncate
         prompt_prefix = "  ";
-        # reset, follow, row, closest, none
-        selection_strategy = "reset";
-        # set an environment for term_previewer
-        set_env = { COLORTERM = "truecolor"; };
+        selection_strategy = "reset"; # reset, follow, row, closest, none
+        set_env = { COLORTERM = "truecolor"; }; # set an environment for term_previewer
         sorting_strategy = "ascending";
       };
     };

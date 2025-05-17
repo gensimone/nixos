@@ -1,4 +1,4 @@
-{ ... }: 
+{ ... }:
 
 {
   programs.nvf.settings.vim.comments = {
@@ -7,12 +7,12 @@
       setupOpts.mappings = {
         basic = false;  # wheter to enable basic mappings
         extra = false;  # wheter to enable extra mappings
-        toggleCurrentLine = null;
-        toggleCurrentBlock = null;
-        toggleSelectedLine = null;
-        toggleOpLeaderBlock = null;
-        toggleSelectedBlock = null;
-        toggleOpSelectedBlock = null;
+        toggleCurrentLine = "<leader>/";
+        toggleCurrentBlock = "<leader>/";
+        toggleSelectedLine = "<leader>/";
+        toggleOpLeaderBlock = "<leader>/";
+        toggleSelectedBlock = "<leader>/";
+        toggleOpSelectedBlock = "<leader>/";
       };
     };
   };

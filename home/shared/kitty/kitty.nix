@@ -1,6 +1,8 @@
 { ... }:
 
 {
+  xdg.configFile."kitty/themes".source = ./themes;
+
   programs.kitty = {
     enable = true;
     font = {

@@ -1,0 +1,47 @@
+* {
+  background-image: none;
+}
+
+window {
+  background-color: rgba(12, 12, 12, 0.9);
+}
+
+button {
+  color: #ffffff;
+  background-color: #1e1e1e;
+  border-style: solid;
+  border-width: 2px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+button:focus,
+button:active,
+button:hover {
+  background-color: #3700b3;
+  outline-style: none;
+}
+
+#lock {
+  background-image: url("~/.config/wleave/icons/lock.svg")
+}
+
+#logout {
+  background-image: url("~/.config/wleave/icons/logout.svg")
+}
+
+#suspend {
+  background-image: url("~/.config/wleave/icons/suspend.svg")
+}
+
+#hibernate {
+  background-image: url("~/.config/wleave/icons/hibernate.svg")
+}
+
+#shutdown {
+  background-image: url("~/.config/wleave/icons/shutdown.svg")
+}
+
+#reboot {
+  background-image: url("~/.config/wleave/icons/reboot.svg")
+}

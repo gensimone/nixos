@@ -5,7 +5,7 @@
     ./shared/browser/browser.nix
     ./shared/cmus.nix
     ./shared/hypr/hypr.nix
-    ./shared/kitty.nix
+    ./shared/kitty/kitty.nix
     ./shared/programs.nix
     ./shared/python/python.nix
     ./shared/shell.nix

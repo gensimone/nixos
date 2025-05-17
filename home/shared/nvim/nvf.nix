@@ -10,7 +10,7 @@
 
   home.packages = with pkgs; [
     tree-sitter
-    nodejs_23
+    nodejs_24
   ];
 
   imports = [
