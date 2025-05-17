@@ -19,6 +19,7 @@ let
     gitup = "git add . && git commit -m 'Update' && git push";
     cpr = "rsync --archive -hh --partial --info=stats1,progress2 --modify-window=1 \"$@\"";
     mvr = "rsync --archive -hh --partial --info=stats1,progress2 --modify-window=1 --remove-source-files \"$@\"";
+    ".." = "cd ..";
   };
 in {
   programs = {

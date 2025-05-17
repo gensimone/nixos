@@ -55,7 +55,7 @@
       "custom/logo": {
         "format": " ",
         "tooltip": false,
-        "on-click": "wleave"
+        "on-click": "kitty --hold --class fastfetch fastfetch"
       },
       "custom/quit": {
         "format": "󰈆 ",

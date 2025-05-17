@@ -28,7 +28,6 @@
     ../swayimg.nix
     ../swaync/swaync.nix
     ../waybar/waybar.nix
-    ../wleave/wleave.nix
     ./hypridle.nix
     ./hyprland/hyprland.nix
     ./hyprlock/hyprlock.nix

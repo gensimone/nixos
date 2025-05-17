@@ -1,5 +1,7 @@
-# Nixos
+# NixOS // Hyprland Configuration
 
-## Screenshots
-![](./.github/nixos-2.png)
-![](./.github/nixos-1.png)
+## Gallery
+![](./.github/screenshot-1.png)
+![](./.github/screenshot-2.png)
+![](./.github/screenshot-3.png)
+![](./.github/video.mkv)
