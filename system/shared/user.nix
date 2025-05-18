@@ -12,4 +12,7 @@
     enable = true;
     user = "simone";
   };
+
+  # required to mount with udisks
+  services.gvfs.enable = true;
 }
