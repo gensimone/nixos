@@ -8,7 +8,7 @@
     ./shared/kitty/kitty.nix
     ./shared/programs.nix
     ./shared/python/python.nix
-    ./shared/shell.nix
+    ./shared/shell/shell.nix
     ./shared/spicetify.nix
     ./shared/theme.nix
     ./shared/wallpapers/wallpapers.nix

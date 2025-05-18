@@ -71,7 +71,7 @@ in {
       PDFjs = false;
       PasswordManagerEnabled = false;
       PopupBlocking = { Allow = []; Default = true; Locked = true; };
-      PromptForDownloadLocation = false;
+      PromptForDownloadLocation = true;
       SearchBar = "unified";
       SearchEngines = { Default = "DuckDuckGo"; PreventInstalls = true; SearchSuggestEnabled = false; Remove = [ "Bing" "Google" "Ecosia" "Qwant" "Wikipedia (en)" "Bookmarks" "Tabs" "History" ]; };
       StartDownloadsInTempDirectory = true;
