@@ -3,14 +3,16 @@
     font-family: "CaskaydiaCove Nerd Font";
     font-size: 14px;
     padding: 0px 3px;
+    min-height: 0px;
 }
 
 window#waybar>box {
-  padding-top: 7px;
+  padding-top: 5px;
 }
 
 window#waybar {
   background: transparent;
+  color: transparent;
 }
 
 #workspaces button.active {
