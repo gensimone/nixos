@@ -2,6 +2,7 @@
 
 {
   programs.nvf.settings.vim.autocomplete = {
+
     nvim-cmp = {
       enable = true;
       sources = {
@@ -9,7 +10,7 @@
         luasnip = "[LuaSnip]";
       };
       mappings = {
-        close = "<C-e>";
+        close = null;
         next = "<C-n>";
         previous = "<C-p>";
         scrollDocsUp = "<C-u>";
@@ -18,5 +19,6 @@
         complete = "<C-Space>";
       };
     };
+
   };
 }

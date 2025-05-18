@@ -1,17 +1,16 @@
 * {
-    border: none;
     border-radius: 0px;
     font-family: "CaskaydiaCove Nerd Font";
     font-size: 14px;
-    min-height: 0px;
     padding: 0px 3px;
-    margin: 0px 0px;
+}
+
+window#waybar>box {
+  padding-top: 7px;
 }
 
 window#waybar {
-  color: transparent;
   background: transparent;
-  margin: 10px 10px;
 }
 
 #workspaces button.active {
@@ -56,7 +55,7 @@ window#waybar {
   color: @theme_fg_color;
   background: shade(alpha(@theme_bg_color, 0.9), 1.25);
   border-color: shade(alpha(#a6a8ad, 0.8), 1.25);
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
   border-radius: 10px;
 }

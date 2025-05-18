@@ -5,8 +5,7 @@
     noice.enable = true;
     borders = {
       enable = true;
-      # none, single, double, rounded, solid, shadow
-      globalStyle = "rounded";
+      globalStyle = "rounded"; # none, single, double, rounded, solid, shadow
       plugins.nvim-cmp.enable = true;
     };
   };

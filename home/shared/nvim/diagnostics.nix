@@ -7,8 +7,7 @@
       virtual_text = false;
       virtual_lines = false;
       underline = false;
-      # Update diagnostics in Insert mode. If false, diagnostics will be updated on InsertLeave (:help InsertLeave).
-      update_in_insert = false;
+      update_in_insert = false; # Update diagnostics in Insert mode. If false, diagnostics will be updated on InsertLeave (:help InsertLeave).
       float = {
         header = false;
         border = "rounded";
