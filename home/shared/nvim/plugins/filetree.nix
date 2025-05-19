@@ -13,8 +13,23 @@
         git.enable = false;
         actions = {
           open_file = {
+            window_picker = {
+              enable = true;
+              chars = "HL";
+              exclude = {
+                buftype = [
+                  "nofile"
+                  "terminal"
+                  "help"
+                ];
+                filetype = [
+                  "notify"
+                  "diff"
+                ];
+              };
+            };
             resize_window = true;
-            quit_on_open = true;
+            quit_on_open = false;
           };
         };
         # TODO: trash support

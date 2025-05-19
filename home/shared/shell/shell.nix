@@ -75,6 +75,6 @@ in {
     ../irssi/irssi.nix
     ../nvim/nvf.nix
     ../ranger/ranger.nix
-    ../tmux/tmux.nix
+    ../tmux.nix
   ];
 }

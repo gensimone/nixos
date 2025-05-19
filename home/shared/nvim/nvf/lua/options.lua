@@ -1,5 +1,9 @@
 vim.opt.fillchars:append { eob = " " }
 
+vim.cmd("set timeout")
+vim.cmd("set timeoutlen=1500")
+vim.cmd("set nottimeout")
+
 vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
 
 -- remove trailing whitespace

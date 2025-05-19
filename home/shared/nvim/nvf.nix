@@ -11,6 +11,7 @@
   home.packages = with pkgs; [
     tree-sitter
     nodejs_24
+    nil
   ];
 
   imports = [
