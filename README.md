@@ -1,6 +1,5 @@
-  # NOTE:
 # NixOS // Hyprland Configuration
 
 ## Gallery
-![](./.github/screenshot-1.png)
-![](./.github/screenshot-2.png)
+![](./.github/ss1.png)
+![](./.github/ss2.png)
