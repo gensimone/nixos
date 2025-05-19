@@ -34,7 +34,7 @@
             # when set to auto, Neorg will open all folds when opening new documents
             # if foldlevel is 0. When set to always, Neorg will always open all folds
             # when opening new documents. When set to never, Neorg will not do anything.
-            init_open_folds = "auto";
+            init_open_folds = "always";
           };
           "core.export".config = {
               markdown.extensions = [ "all" ];
