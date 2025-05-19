@@ -25,13 +25,14 @@
     { key = "<esc>";     mode = "n";       action = ":noh<CR>"; }
 
     # telescope
-    { key = "<leader>ff"; mode = "n"; action = ":Telescope find_files<CR>";  desc = "Find Files"; }
     { key = "<leader>fr"; mode = "n"; action = ":Telescope oldfiles<CR>";    desc = "Recent Files"; }
     { key = "<leader>fg"; mode = "n"; action = ":Telescope live_grep<CR>";   desc = "Live Grep"; }
     { key = "<leader>fn"; mode = "n"; action = ":Telescope notify<CR>";      desc = "Notifications"; }
     { key = "<leader>fb"; mode = "n"; action = ":Telescope buffers<CR>";     desc = "Buffers"; }
-    { key = "<leader>fm"; mode = "n"; action = ":Telescope man_pages<CR>";     desc = "Man Pages"; }
     { key = "<leader>fw"; mode = "n"; action = ":Telescope grep_string<CR>"; desc = "Grep String"; }
-    { key = "<leader>fc"; mode = "n"; action = ":Telescope find_files search_dirs={/home/simone/sources/personal/nixos/}<CR>"; desc = "NixOS Config Files"; }
+    { key = "<leader>ff"; mode = "n"; action = ":Telescope find_files<CR>";  desc = "Find Files [CWD]"; }
+    { key = "<leader>fh"; mode = "n"; action = ":Telescope find_files search_dirs={\"~\"}<CR>";  desc = "Find Files [Home]"; }
+    { key = "<leader>fc"; mode = "n"; action = ":Telescope find_files search_dirs={\"~/sources/personal/nixos\"}<CR>"; desc = "Find Files [NixOS]"; }
+    { key = "<leader>fm"; mode = "n"; action = ":Telescope man_pages sections=ALL<CR>";     desc = "Man Pages"; }
   ];
 }

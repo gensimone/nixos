@@ -22,25 +22,27 @@
     # but as a downside it doesn't survive user logout.
     secureSocket = true;
 
-    plugins = with pkgs; [
-      # colorscheme
-      {
-        plugin = tmuxPlugins.gruvbox;
-        extraConfig = ''
-          set -g @tmux-gruvbox "dark" # or 'dark256', 'light', 'light256'
-
-          # transparent status-bar
-          set -g @tmux-gruvbox-statusbar-alpha 'true'
-        '';
-      }
-    ];
-
     extraConfig = ''
+      # status bar settings
+      set -g status-right ""
+      set -g status-left ""
+      set -g status-position top
+      set -g status-justify centre
+      set -g status-style bg=default
+      set -g status-style fg=white
+
+      # current
+      set-window-option -g window-status-current-style fg=magenta
+      set-window-option -g window-status-current-format "#W"
+
+      # inactive
+      set-window-option -g window-status-style fg=white
+      set-window-option -g window-status-format "#W"
+
+      # prompt color
+
       # automatically reset tmux window indexes
       set -g renumber-window on
-
-      # move tmux's statusbar at the top
-      set-option -g status-position top
 
       # clipboard
       bind-key -T copy-mode-vi v send-keys -X begin-selection
