@@ -4,6 +4,7 @@
   imports = [
     ../../shared/audio.nix
     ../../shared/bluetooth.nix
+    ../../shared/documentation.nix
     ../../shared/fonts.nix
     ../../shared/hyprland.nix
     ../../shared/networking/networking.nix
