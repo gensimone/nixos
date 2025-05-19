@@ -32,12 +32,12 @@
       set -g status-style fg=white
 
       # current
-      set-window-option -g window-status-current-style fg=magenta
-      set-window-option -g window-status-current-format "#W"
+      # set-window-option -g window-status-current-style fg=blue,bg=dark
+      set-window-option -g window-status-current-format "#[reverse] #I:#W"
 
       # inactive
       set-window-option -g window-status-style fg=white
-      set-window-option -g window-status-format "#W"
+      set-window-option -g window-status-format "#I:#W"
 
       # prompt color
 
