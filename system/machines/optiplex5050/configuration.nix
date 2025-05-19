@@ -4,9 +4,11 @@
   imports = [
     ../../shared/audio.nix
     ../../shared/bluetooth.nix
+    ../../shared/documentation.nix
     ../../shared/fonts.nix
     ../../shared/hyprland.nix
     ../../shared/networking/networking.nix
+    ../../shared/nh.nix
     ../../shared/options.nix
     ../../shared/power.nix
     ../../shared/programs.nix
@@ -29,10 +31,10 @@
     };
   };
 
+  networking.hostName = "optiplex5050";
+
   environment.systemPackages = [];
-  environment.shellAliases = {
-    sys-rebuild = "nixos-rebuild switch --flake ~/sources/personal/nixos#optiplex5050 --use-remote-sudo";
-  };
+  environment.shellAliases = {};
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

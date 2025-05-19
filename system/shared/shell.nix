@@ -8,6 +8,7 @@
       VISUAL = "less";
     };
     shellAliases = {
+      sr = "nh os switch";
       rm = "rm -i";
       ln = "ln -i";
       cp = "cp -i";

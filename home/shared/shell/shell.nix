@@ -2,7 +2,6 @@
 
 let
   shellAliases = {
-    f = "fzf --bind 'enter:become(vim {})' --height 40% --border";
     cp = "cp -i";
     df = "df -h";
     du = "du -h";
@@ -13,10 +12,8 @@ let
     rm = "rm -i";
     vi = "nvim";
     vim = "nvim";
-    clean-boot = "sudo /run/current-system/bin/switch-to-configuration boot";
-    clean-all = "sudo nix-collect-garbage -d && clean-boot";
-    build-all = "sys-rebuild && home-rebuild";
     rsync = "gnu-rsync";
+    clean-boot = "sudo /run/current-system/bin/switch-to-configuration boot";
     ".." = "cd ..";
   };
 in {
@@ -30,6 +27,10 @@ in {
       enable = true;
       shellAliases = shellAliases;
       initExtra = ''
+        search() {
+          nh search "$@" | less
+        }
+
         # Enable vi mode
         set -o vi
       '';

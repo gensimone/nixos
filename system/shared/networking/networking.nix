@@ -1,10 +1,7 @@
 { ... }:
 
 {
-  networking = {
-    hostName = "nixos";
-    networkmanager.enable = true;
-  };
+  networking.networkmanager.enable = true;
 
   imports = [
     ./dns.nix

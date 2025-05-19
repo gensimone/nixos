@@ -8,6 +8,7 @@
     ../../shared/fonts.nix
     ../../shared/hyprland.nix
     ../../shared/networking/networking.nix
+    ../../shared/nh.nix
     ../../shared/options.nix
     ../../shared/power.nix
     ../../shared/programs.nix
@@ -28,10 +29,10 @@
     };
   };
 
+  networking.hostName = "latitude5400";
+
   environment.systemPackages = [];
-  environment.shellAliases = {
-    sys-rebuild = "nixos-rebuild switch --flake ~/sources/personal/nixos#latitude5400 --use-remote-sudo";
-  };
+  environment.shellAliases = {};
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

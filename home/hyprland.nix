@@ -23,7 +23,7 @@
   home.homeDirectory = "/home/simone";
 
   home.shellAliases = {
-    home-rebuild = "home-manager switch --flake ~/sources/personal/nixos#hyprland";
+    hr = "nh home switch -c hyprland";
   };
 
   home.packages = [];
