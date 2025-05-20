@@ -2,8 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    batsignal            # Lightweight battery daemon written in C
-    brightnessctl        # This program allows you read and control device brightness
     grim                 # Grab images from a Wayland compositor
     hyprpicker           # Wlroots-compatible Wayland color picker that does not suck
     libnotify            # Library that sends desktop notifications to a notification daemon
@@ -21,7 +19,6 @@
   ];
 
   imports = [
-    ../batsignal.nix
     ../clipse.nix
     ../rofi/rofi.nix
     ../swappy/swappy.nix

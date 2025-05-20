@@ -30,13 +30,22 @@
       };
     };
     homeConfigurations = {
-      hyprland = home-manager.lib.homeManagerConfiguration {
+      laptop = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = { inherit inputs; };
         modules = [
           nvf.homeManagerModules.default
           spicetify-nix.homeManagerModules.spicetify
-          ./home/hyprland.nix
+          ./home/variant/laptop.nix
+        ];
+      };
+      desktop = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+        extraSpecialArgs = { inherit inputs; };
+        modules = [
+          nvf.homeManagerModules.default
+          spicetify-nix.homeManagerModules.spicetify
+          ./home/variant/desktop.nix
         ];
       };
     };

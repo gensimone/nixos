@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     bitwarden-desktop # Secure and free password manager for all of your devices
     blueman           # GTK-based Bluetooth Manager
+    brightnessctl     # This program allows you read and control device brightness
     capitaine-cursors # X-cursor theme inspired by macOS and based on KDE Breeze
     cargo             # Downloads your Rust project's dependencies and builds your project
     cmus              # Small, fast and powerful console music player for Linux and *BSD
