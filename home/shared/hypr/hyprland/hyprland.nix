@@ -339,7 +339,10 @@
         "float,title:((.*)Syncthing Tray(.*))"
         "float,class:^(waypaper)$"
         "float,class:^(fastfetch)$"
+        "float,class:^(mpv)$"
 
+        "size 800 800,class:(swayimg)"
+        "size 1280 720,class:(mpv)"
         "size 800 800,class:(swayimg)"
         "size 620 650,class:^(clipse)$"
         "size 800 800,class:^(waypaper)$"
