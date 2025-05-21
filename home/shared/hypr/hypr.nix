@@ -6,7 +6,7 @@
     hyprpicker           # Wlroots-compatible Wayland color picker that does not suck
     libnotify            # Library that sends desktop notifications to a notification daemon
     networkmanagerapplet # NetworkManager control applet for GNOME
-    pcmanfm              # File manager with GTK interface
+    nautilus             # File manager from GNOME
     pulsemixer           # Cli and curses mixer for pulseaudio
     slurp                # Select a region in a Wayland compositor
     soteria              # Polkit authentication agent written in GTK designed to be used with any desktop environment

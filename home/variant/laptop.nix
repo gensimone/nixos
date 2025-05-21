@@ -3,7 +3,7 @@
 {
   imports = [
     ./core.nix
-    ./shared/batsignal.nix
+    ../shared/batsignal.nix
   ];
 
   home = {

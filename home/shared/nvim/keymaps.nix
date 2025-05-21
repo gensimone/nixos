@@ -21,7 +21,7 @@
 
     # various
     { key = "<leader>q"; mode = "n";       action = ":q<CR>"; }
-    { key = "<leader>y"; mode = ["n" "v"]; action = "[[\"+y]]"; }
+    { key = "<leader>y"; mode = ["n" "v"]; action = "+y"; }
     { key = "<esc>";     mode = "n";       action = ":noh<CR>"; }
 
     # telescope
