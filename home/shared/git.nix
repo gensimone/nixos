@@ -15,9 +15,8 @@
       lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative";
     };
     extraConfig = {
-      init = {
-        defaultBranch = "main";
-      };
+      init.defaultBranch = "main";
+      pull.rebase = true;
     };
   };
 }
