@@ -13,6 +13,7 @@ let
     vi = "nvim";
     vim = "nvim";
     rsync = "gnu-rsync";
+    grep = "grep --color -n -r";
     clean-boot = "sudo /run/current-system/bin/switch-to-configuration boot";
     ".." = "cd ..";
   };
