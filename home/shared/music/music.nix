@@ -9,7 +9,7 @@
     network = {
       port = 6600; # default
       listenAddress = "127.0.0.1";
-      startWhenNeeded = false; # enable systemd socket activation.
+      startWhenNeeded = true; # enable systemd socket activation.
     };
   };
 

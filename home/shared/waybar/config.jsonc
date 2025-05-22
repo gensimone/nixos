@@ -8,8 +8,7 @@
       "modules-left": [
         "hyprland/workspaces",
         "tray",
-        "group/group-audio",
-        "group/group-music"
+        "group/group-audio"
       ],
       "modules-center": [
         "clock"
@@ -181,7 +180,7 @@
       "mpd": {
         "server": "127.0.0.1",
         "port": 6600,
-        "format": " {stateIcon} {title}  ",
+        "format": " {stateIcon} {title} ",
         "format-disconnected": " Disconnected  ",
         "format-stopped": " Stopped  ",
         "interval": 10,
