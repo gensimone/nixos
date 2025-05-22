@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   home.packages = with pkgs; [ pyprland ];
@@ -185,7 +185,6 @@
         "$mod, a, exec, kitty --class pulsemixer pulsemixer"
         "$mod, c, exec, kitty --class clipse clipse"
         "$mod CTRL, p, exec, waypaper"
-        "$mod, d, exec, kitty --class finder fzf --bind 'enter:become(kitty --class post-finder nvim {})' --height 100% --border"
 
         # switch workspaces
         "$mod, 0, workspace, 0"

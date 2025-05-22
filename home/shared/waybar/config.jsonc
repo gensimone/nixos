@@ -8,7 +8,8 @@
       "modules-left": [
         "hyprland/workspaces",
         "tray",
-        "group/group-audio"
+        "group/group-audio",
+        "group/group-music"
       ],
       "modules-center": [
         "clock"
@@ -170,12 +171,56 @@
           "*": 4
         }
       },
+      "group/group-music": {
+        "orientation": "inherit",
+        "modules": [
+          "mpd",
+          "cava"
+        ]
+      },
+      "mpd": {
+        "server": "127.0.0.1",
+        "port": 6600,
+        "format": " {stateIcon} {title}  ",
+        "format-disconnected": " Disconnected  ",
+        "format-stopped": " Stopped  ",
+        "interval": 10,
+        "state-icons": {
+          "paused": "",
+          "playing": ""
+        },
+        "tooltip": false,
+        "tooltip-format": "MPD (connected)",
+        "tooltip-format-disconnected": "MPD (disconnected)"
+
+      },
+      "cava": {
+        "framerate": 120,
+        "autosens": 1,
+        "bars": 18,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 10000,
+        "method": "pulse",
+        "source": "auto",
+        "stereo": true,
+        "reverse": false,
+        "sleep_timer": 1,
+        "bar_delimiter": 0,
+        "monstercat": false,
+        "waves": true,
+        "noise_reduction": 0.25,
+        "input_delay": 2,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "hide_on_silence": true,
+        "actions": {
+          "on-click-right": "mode"
+        }
+      },
       "group/group-audio": {
         "orientation": "inherit",
         "modules": [
           "pulseaudio#mic",
           "pulseaudio#sink"
-          // "cava"
         ]
       },
       "pulseaudio#mic": {
@@ -207,28 +252,6 @@
             " ",
             " "
           ]
-        }
-      },
-      "cava": {
-        "framerate": 120,
-        "autosens": 1,
-        "bars": 18,
-        "lower_cutoff_freq": 50,
-        "higher_cutoff_freq": 10000,
-        "method": "pulse",
-        "source": "auto",
-        "stereo": true,
-        "reverse": false,
-        "sleep_timer": 1,
-        "bar_delimiter": 0,
-        "monstercat": false,
-        "waves": true,
-        "noise_reduction": 0.25,
-        "input_delay": 2,
-        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
-        "hide_on_silence": true,
-        "actions": {
-          "on-click-right": "mode"
         }
       }
     }

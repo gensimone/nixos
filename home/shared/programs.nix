@@ -7,7 +7,6 @@
     brightnessctl     # This program allows you read and control device brightness
     capitaine-cursors # X-cursor theme inspired by macOS and based on KDE Breeze
     cargo             # Downloads your Rust project's dependencies and builds your project
-    cmus              # Small, fast and powerful console music player for Linux and *BSD
     ffmpeg            # Complete, cross-platform solution to record, convert and stream audio and video
     gcc               # GNU Compiler Collection
     gimp              # GNU Image Manipulation Program

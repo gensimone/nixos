@@ -3,7 +3,7 @@
 {
   imports = [
     ../shared/browser/browser.nix
-    ../shared/cmus.nix
+    ../shared/music/music.nix
     ../shared/hypr/hypr.nix
     ../shared/kitty/kitty.nix
     ../shared/programs.nix

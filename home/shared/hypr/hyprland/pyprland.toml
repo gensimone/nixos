@@ -19,7 +19,7 @@ lazy = true
 
 [scratchpads.music]
 animation = ""
-command = "kitty --class kitty-music cmus"
+command = "kitty --class kitty-music rmpc"
 class = "kitty-music"
 size = "50% 50%"
 unfocus = "hide"
