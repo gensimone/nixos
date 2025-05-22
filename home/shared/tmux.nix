@@ -25,19 +25,19 @@
     extraConfig = ''
       # status bar settings
       set -g status-right ""
-      set -g status-left ""
+      set -g status-left "  "
       set -g status-position top
-      set -g status-justify centre
+      # set -g status-justify centre
       set -g status-style bg=default
       set -g status-style fg=white
 
       # current
-      # set-window-option -g window-status-current-style fg=blue,bg=dark
-      set-window-option -g window-status-current-format "#[reverse] #I:#W"
+      setw -g window-status-current-style fg=green,bold,bg="#282828"
+      setw -g window-status-current-format "#I #W "
 
       # inactive
-      set-window-option -g window-status-style fg=white
-      set-window-option -g window-status-format "#I:#W"
+      setw -g window-status-style fg=black,bg="#282828"
+      setw -g window-status-format "#I #W "
 
       # prompt color
 
