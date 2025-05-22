@@ -4,14 +4,14 @@
 (
     address: "127.0.0.1:6600",
     password: None,
-    theme: None,
+    theme: Some("theme"),
     cache_dir: None,
-    on_song_change: None,
+    on_song_change: ["~/.config/rmpc/scripts/notify"],
     volume_step: 5,
-    max_fps: 30,
+    max_fps: 60,
     scrolloff: 0,
     wrap_navigation: false,
-    enable_mouse: true,
+    enable_mouse: false,
     status_update_interval_ms: 1000,
     select_current_song_on_change: false,
     album_art: (
@@ -24,9 +24,9 @@
     keybinds: (
         global: {
             ":":       CommandMode,
-            ",":       VolumeDown,
+            "u":       VolumeDown,
             "s":       Stop,
-            ".":       VolumeUp,
+            "i":       VolumeUp,
             "<Tab>":   NextTab,
             "<S-Tab>": PreviousTab,
             "1":       SwitchToTab("Queue"),
@@ -75,7 +75,7 @@
             "<C-Space>": InvertSelection,
             "G":         Bottom,
             "<CR>":      Confirm,
-            "i":         FocusInput,
+            ",":         FocusInput,
             "J":         MoveDown,
             "<C-d>":     DownHalf,
             "/":         EnterSearch,
@@ -112,37 +112,17 @@
         album_sort_by: Date,
     ),
     tabs: [
-        (
-            name: "Queue",
-            pane: Split(
-                direction: Horizontal,
-                panes: [(size: "40%", pane: Pane(AlbumArt)), (size: "60%", pane: Pane(Queue))],
-            ),
+    (
+        name: "Queue",
+        pane: Split(
+            direction: Horizontal,
+            panes: [(size: "31%", pane: Pane(AlbumArt)), (size: "69%", pane: Pane(Queue))]
         ),
-        (
-            name: "Directories",
-            pane: Pane(Directories),
-        ),
-        (
-            name: "Artists",
-            pane: Pane(Artists),
-        ),
-        (
-            name: "Album Artists",
-            pane: Pane(AlbumArtists),
-        ),
-        (
-            name: "Albums",
-            pane: Pane(Albums),
-        ),
-        (
-            name: "Playlists",
-            pane: Pane(Playlists),
-        ),
-        (
-            name: "Search",
-            pane: Pane(Search),
-        ),
-    ],
+    ),
+    (
+        name: "Directories",
+        pane: Pane(Directories),
+    ),
+],
 )
 

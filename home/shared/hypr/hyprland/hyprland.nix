@@ -300,7 +300,6 @@
 
       windowrulev2 = [
         "float,class:(clipse)"
-        "float,class:(finder)"
         "float,class:(swayimg)"
         "float,title:^(About Mozilla Firefox)$"
         "float,class:^(firefox)$,title:^(Picture-in-Picture)$"
@@ -333,7 +332,6 @@
         "float,class:^(io.missioncenter.MissionCenter)$"
         "float,class:^(xdg-desktop-portal-gtk)$"
         "float,class:^(pulsemixer)$"
-        "float,class:^(post-finder)$"
         "float,title:^(Removable medium is inserted)$,class:^(pcmanfm)$"
         "float,title:((.*)Syncthing Tray(.*))"
         "float,class:^(waypaper)$"
@@ -342,11 +340,8 @@
 
         "size 800 800,class:(swayimg)"
         "size 1280 720,class:(mpv)"
-        "size 800 800,class:(swayimg)"
         "size 620 650,class:^(clipse)$"
         "size 800 800,class:^(waypaper)$"
-        "size 1000 400,class:^(finder)$"
-        "size 1250 830,class:^(post-finder)$"
         "size 620 350,class:^(pulsemixer)$"
         "size 830 630,title:((.*)Syncthing Tray(.*))"
         "size 1000 450,class:(fastfetch)"

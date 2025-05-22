@@ -21,6 +21,6 @@ lazy = true
 animation = ""
 command = "kitty --class kitty-music rmpc"
 class = "kitty-music"
-size = "50% 50%"
+size = "45% 28%"
 unfocus = "hide"
 lazy = true

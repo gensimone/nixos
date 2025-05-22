@@ -15,4 +15,8 @@
 
   # client
   home.packages = with pkgs; [ rmpc ];
+
+  xdg.configFile."rmpc/themes".source = ./themes;
+  xdg.configFile."rmpc/config.ron".source = ./config.ron;
+  xdg.configFile."rmpc/scripts".source = ./scripts;
 }

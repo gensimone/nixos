@@ -54,7 +54,7 @@
         ]
       },
       "custom/logo": {
-        "format": " ",
+        "format": "",
         "tooltip": false,
         "on-click": "kitty --hold --class fastfetch fastfetch"
       },
