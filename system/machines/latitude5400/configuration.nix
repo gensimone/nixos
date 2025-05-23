@@ -13,6 +13,7 @@
     ../../shared/power.nix
     ../../shared/programs.nix
     ../../shared/shell.nix
+    ../../shared/steam.nix
     ../../shared/timezone.nix
     ../../shared/user.nix
     ../../shared/virtualization.nix
