@@ -19,33 +19,36 @@
       latitude5400 = lib.nixosSystem {
         inherit system;
         modules = [
-            ./system/machines/latitude5400/configuration.nix
+            ./system/machines/latitude5400
         ];
       };
+
       optiplex5050 = lib.nixosSystem {
         inherit system;
         modules = [
-            ./system/machines/optiplex5050/configuration.nix
+            ./system/machines/optiplex5050
         ];
       };
     };
+
     homeConfigurations = {
-      laptop = home-manager.lib.homeManagerConfiguration {
+      latitude5400 = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = { inherit inputs; };
         modules = [
           nvf.homeManagerModules.default
           spicetify-nix.homeManagerModules.spicetify
-          ./home/variant/laptop.nix
+          ./home/machines/latitude5400
         ];
       };
-      desktop = home-manager.lib.homeManagerConfiguration {
+
+      optiplex5050 = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = { inherit inputs; };
         modules = [
           nvf.homeManagerModules.default
           spicetify-nix.homeManagerModules.spicetify
-          ./home/variant/desktop.nix
+          ./home/machines/optiplex5050
         ];
       };
     };

@@ -16,6 +16,7 @@
       "modules-right": [
         "group/toggle-group",
         "group/group-system-status",
+        "custom/pomodoro",
         "group/group-power"
       ],
       "group/toggle-group": {
@@ -28,6 +29,13 @@
       "custom/swaync": {
         "format": " 󰂚 ",
         "on-click": "swaync-client -t"
+      },
+      "custom/pomodoro": {
+        "format": "{}",
+        "return-type": "json",
+        "exec": "~/.config/waybar/modules/pomodoro",
+        "on-click": "~/.config/waybar/modules/pomodoro toggle",
+        "on-click-right": "~/.config/waybar/modules/pomodoro reset"
       },
       "idle_inhibitor": {
         "format": "{icon}",
