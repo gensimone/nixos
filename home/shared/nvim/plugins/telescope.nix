@@ -5,7 +5,15 @@
     enable = true;
     setupOpts = {
       defaults = {
-        layout_strategy = "horizontal";
+        layout_strategy = "vertical";
+        layout_config = {
+          height = 0.8;
+          width = 0.8;
+          preview_cutoff = 10;
+          vertical = {
+            mirror = false;
+          };
+        };
         color_devicons = true;
         entry_prefix = " ";
         initial_mode = "insert"; # or normal
