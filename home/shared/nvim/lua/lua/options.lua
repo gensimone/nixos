@@ -45,3 +45,5 @@ map('n', 'tf', ':lua ToggleFocusMode()<CR>', default_opts)
 map('n', 'ts', ':lua vim.o.signcolumn = vim.o.signcolumn == "yes" and "no" or "yes"<CR>', default_opts)
 map('n', 'tn', ':lua vim.o.number = not vim.o.number<CR>', default_opts)
 map('n', 'tl', ':lua vim.o.laststatus = vim.o.laststatus == 0 and 2 or 0<CR>', default_opts)
+
+ToggleFocusMode()

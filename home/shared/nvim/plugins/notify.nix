@@ -8,7 +8,7 @@
         position = "top_right"; # top_left, top_right, bottom_left, bottom_right
         render = "default"; # minimal, default, simple, compact, wrapped-compact
         stages = "static"; # fade_in_slide_out, fade, slide, static
-        timeout = 1000;
+        timeout = 2000;
       };
     };
   };

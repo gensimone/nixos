@@ -7,6 +7,7 @@
     ./comments.nix
     ./dashboard.nix
     ./filetree.nix
+    ./git.nix
     ./lsp.nix
     ./mini.nix
     ./notes.nix

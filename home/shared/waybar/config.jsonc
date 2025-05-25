@@ -3,8 +3,8 @@
       "reload_style_on_change": true,
       "name": "topbar",
       "layer": "top",
-      "position": "top",
-      "height": 30,
+      "position": "bottom",
+      "height": 10,
       "modules-left": [
         "hyprland/workspaces",
         "tray",
@@ -31,9 +31,9 @@
         "on-click": "swaync-client -t"
       },
       "custom/pomodoro": {
-        "format": "{}",
+        "format": " {} ",
         "return-type": "json",
-        "exec": "~/.config/waybar/modules/pomodoro",
+        "exec": "~/.config/waybar/modules/pomodoro --autow --autob --no-icons --work-icon 󰞌 --break-icon  ",
         "on-click": "~/.config/waybar/modules/pomodoro toggle",
         "on-click-right": "~/.config/waybar/modules/pomodoro reset"
       },
@@ -61,22 +61,22 @@
         ]
       },
       "custom/logo": {
-        "format": "",
+        "format": "  ",
         "tooltip": false,
         "on-click": "kitty --hold --class fastfetch fastfetch"
       },
       "custom/quit": {
-        "format": "󰈆 ",
+        "format": " 󰈆 ",
         "tooltip": false,
         "on-click": "hyprctl dispatch exit"
       },
       "custom/lock": {
-        "format": " ",
+        "format": "  ",
         "tooltip": false,
         "on-click": "hyprlock"
       },
       "custom/reboot": {
-        "format": "󰑓",
+        "format": " 󰑓 ",
         "tooltip": false,
         "on-click": "reboot"
       },
@@ -88,7 +88,7 @@
       "clock": {
         "interval": 60,
         "tooltip": false,
-        "format": "{:%H:%M %A, %B %d, %Y}"
+        "format": " {:%H:%M %A, %B %d, %Y} "
       },
       "group/group-system-status": {
         "orientation": "inherit",
@@ -102,22 +102,32 @@
       },
       "cpu": {
         "interval": 10,
-        "format": " {usage}% ",
-        "tooltip": false
+        "format": "  {usage}% ",
+        "tooltip": false,
+        "states": {
+          "critical": 80,
+          "warning": 35,
+          "good": 0
+        }
       },
       "disk": {
-        "format": " {}% ",
+        "format": "  {}% ",
+        "states": {
+          "critical": 80,
+          "warning": 60,
+          "good": 0
+        },
         "tooltip-format": "{used} / {total} used"
       },
       "memory": {
-        "format": " {}% ",
+        "format": "  {}% ",
         "tooltip-format": "{used:0.1f}G / {total:0.1f}G used"
       },
       "temperature": {
         // for i in /sys/class/hwmon/hwmon*/temp*_input; do echo "$(<$(dirname $i)/name): $(cat ${i%_*}_label 2>/dev/null || echo $(basename ${i%_*})) $(readlink -f $i)"; done
         "critical-threshold": 80,
         "hwmon-path": "/home/simone/.config/waybar/hwmon-path",
-        "format": "{icon} {temperatureC}°C ",
+        "format": " {icon} {temperatureC}°C ",
         "format-icons": [
           "",
           "",
@@ -127,17 +137,16 @@
         ]
       },
       "battery": {
-        "interval": 3,
+        "interval": 30,
         "states": {
           "full": 100,
           "good": 99,
-          "empty": 5
+          "warning": 25,
+          "critical": 10
         },
-        "format": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-empty": "󰂎 0%",
-        "format-full": "󱊣 100%",
+        "format": " {icon} {capacity}% ",
+        "format-charging": "  {capacity}% ",
+        "format-plugged": "  {capacity}% ",
         "format-icons": [
           "󱊡",
           "󱊢",
@@ -147,32 +156,14 @@
         "tooltip-format": "{timeTo}"
       },
       "tray": {
-        "icon-size": 16,
+        "icon-size": 15,
         "spacing": 10
       },
       "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
-          // "1": "",
-          // "2": "",
-          // "3": "",
-          // "4": "",
-          // "5": "",
-          // "6": "",
-          // "7": "",
-          // "8": "",
-          // "9": "",
-          // "0": ""
-          "1": "⼤",
-          "2": "⽾",
-          "3": "⺙",
-          "4": "⽯",
-          "5": "⽮",
-          "6": "⽬",
-          "7": "⾑",
-          "8": "⻓",
-          "9": "⻉",
-          "0": "⽸"
+          "default": "",
+          "active": ""
         },
         "persistent-workspaces": {
           "*": 4
@@ -232,8 +223,8 @@
       },
       "pulseaudio#mic": {
         "format": "{format_source}",
-        "format-source": " {volume}%",
-        "format-source-muted": " {volume}%",
+        "format-source": "  {volume}%",
+        "format-source-muted": "  {volume}%",
         "scroll-step": 1,
         "on-click": "swayosd-client --input-volume mute-toggle",
         "on-scroll-up": "swayosd-client --input-volume raise",
@@ -245,10 +236,10 @@
         "on-click": "swayosd-client --output-volume mute-toggle",
         "on-scroll-up": "swayosd-client --output-volume raise",
         "on-scroll-down": "swayosd-client --output-volume lower",
-        "format": " {icon} {volume}%",
-        "format-muted": "   {volume}%",
-        "format-bluetooth": " 󰂯 {volume}%",
-        "format-bluetooth-muted":" 󰂲 {volume}%",
+        "format": " {icon} {volume}% ",
+        "format-muted": "   {volume}% ",
+        "format-bluetooth": " 󰂯 {volume}% ",
+        "format-bluetooth-muted":" 󰂲 {volume}% ",
         "format-icons": {
           "headphone": "",
           "phone": "",

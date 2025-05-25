@@ -87,7 +87,7 @@
         inactive_opacity = 1.0;
 
         blur = {
-          enabled = false;
+          enabled = true;
           size = 10;
           passes = 3;
           new_optimizations = "on";
@@ -98,11 +98,11 @@
 
         shadow = {
           enabled = true;
-          # range = 10;
-          # render_power = 1;
-          # sharp = true;
-          # ignore_window = true;
-          # scale = 0.5;
+          range = 4;
+          render_power = 3;
+          sharp = false;
+          ignore_window = true;
+          scale = 1.0;
         };
       };
 
@@ -112,6 +112,7 @@
         "ignorezero,swaync-control-center"
         "ignorezero,swaync-notification-window"
 
+        "blur,waybar"
         "blur,notifications"
         "blur,rofi"
         "blur,swaync-control-center"
@@ -299,6 +300,8 @@
       ];
 
       windowrulev2 = [
+        "noblur,class:^(kitty)$"
+
         "float,class:(clipse)"
         "float,class:(swayimg)"
         "float,title:^(About Mozilla Firefox)$"
