@@ -17,7 +17,6 @@
           "target/"
           "result/"
         ];
-        layout = {};
         path_display = [ "smart" ]; # hidden, tail, absolute, smart, shorten, truncate
         prompt_prefix = "  ";
         selection_strategy = "reset"; # reset, follow, row, closest, none
