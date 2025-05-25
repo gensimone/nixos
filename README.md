@@ -23,3 +23,8 @@
 | Terminal Font  | CaskaydiaCove NF |
 
 </details>
+
+## Gallery
+![](./.github/ss1.png)
+![](./.github/ss2.png)
+![](./.github/ss3.png)
