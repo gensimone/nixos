@@ -35,6 +35,9 @@
     { key = "<leader>fc"; mode = "n"; action = ":Telescope find_files search_dirs={\"~/sources/personal/nixos\"}<CR>"; desc = "Find Files [NixOS]"; }
     { key = "<leader>fm"; mode = "n"; action = ":Telescope man_pages sections=ALL<CR>";     desc = "Man Pages"; }
 
+    # terminal
+    { key = "tt"; mode = "n"; action = ":ToggleTerm<CR>";    desc = "Toggle Terminal"; }
+
     # gitsigns
     { key = "<leader>hl"; mode = "n"; action = ":Gitsigns setqflist all<CR>";    desc = "Show hunks"; }
     { key = "th"; mode = "n"; action = ":Gitsigns toggle_linehl<CR>";    desc = "Highlight new lines"; }

@@ -47,3 +47,13 @@ map('n', 'tn', ':lua vim.o.number = not vim.o.number<CR>', default_opts)
 map('n', 'tl', ':lua vim.o.laststatus = vim.o.laststatus == 0 and 2 or 0<CR>', default_opts)
 
 ToggleFocusMode()
+
+-- https://github.com/nvim-telescope/telescope-file-browser.nvim/issues/306
+local transform_mod = require('telescope.actions.mt').transform_mod
+local window_picker  = transform_mod({
+  select = function(prompt_bufnr)
+    local action_state = require("telescope.actions.state")
+    local picker = action_state.get_current_picker(prompt_bufnr)
+    picker.original_win_id = require('window-picker').pick_window()
+  end,
+})

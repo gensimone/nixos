@@ -70,6 +70,11 @@
       lspReferences = null;
       lspTypeDefinitions = null;
       lspWorkspaceSymbols = null;
+      gitBranches = null;
+      gitBufferCommits = null;
+      gitCommits = null;
+      gitStash = null;
+      gitStatus = null;
     };
   };
 }

@@ -8,7 +8,10 @@ in {
     enabledExtensions = with spicePkgs.extensions; [
       adblockify
       hidePodcasts
+      fullAppDisplay
+      keyboardShortcut
     ];
+
     theme = spicePkgs.themes.onepunch;
     colorScheme = "dark";
   };
