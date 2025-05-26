@@ -16,7 +16,7 @@
       enable = true;
       setupOpts = {
         # show intra-line word-diff in the buffer
-        word_diff = true;
+        word_diff = false;
       };
       mappings = {
         # diffProject = "<leader>hD";
