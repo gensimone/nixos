@@ -6,6 +6,7 @@
     ./hypr
     ./kitty
     ./music
+    ./nyaa
     ./programs
     ./python
     ./shell
