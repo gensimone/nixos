@@ -37,5 +37,7 @@
 
     # gitsigns
     { key = "<leader>hl"; mode = "n"; action = ":Gitsigns setqflist all<CR>";    desc = "Show hunks"; }
+    { key = "th"; mode = "n"; action = ":gitsigns toggle_linehl<cr>";    desc = "highlight new lines"; }
+    { key = "th"; mode = "n"; action = ":gitsigns toggle_linehl<cr>";    desc = "highlight new lines"; }
   ];
 }
