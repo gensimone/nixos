@@ -47,6 +47,7 @@
 
       misc = {
         vrr = 0;
+        enable_anr_dialog = false;  # disable 'app not responding' dialog
         disable_hyprland_logo = true;
         disable_splash_rendering = true;
         force_default_wallpaper = 0;

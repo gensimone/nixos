@@ -3,6 +3,7 @@
 {
   imports = [
     ./browser
+    ./games
     ./hypr
     ./kitty
     ./music
