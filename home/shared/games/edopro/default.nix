@@ -1,6 +1,14 @@
-{ pkgs, config, ... }:
+{ pkgs, lib, ... }:
 
 {
   home.packages = with pkgs; [ edopro ];
-  home.file.".local/share/edopro/deck".source = config.lib.file.mkOutOfStoreSymlink /home/simone/sources/personal/nixos/home/shared/games/edopro/deck;
+  # see https://rycee.gitlab.io/home-manager/options.xhtml#opt-home.activation
+  home.activation = {
+    copyEdoproDecks = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+      TARGET=~/.local/share/edopro/*/deck
+      ls $TARGET &>/dev/null && rm -rfv $TARGET
+      ln -sv ~/sources/personal/nixos/home/shared/games/edopro/deck ~/.local/share/edopro/*/
+
+    '';
+  };
 }
