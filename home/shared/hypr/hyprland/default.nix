@@ -69,6 +69,7 @@
         "swayosd-server"
         "swww-daemon"
         "waybar"
+        "create_coretemp_sl"
       ];
 
       general = {

@@ -8,7 +8,6 @@
       TARGET=~/.local/share/edopro/*/deck
       ls $TARGET &>/dev/null && rm -rfv $TARGET
       ln -sv ~/sources/personal/nixos/home/shared/games/edopro/deck ~/.local/share/edopro/*/
-
     '';
   };
 }

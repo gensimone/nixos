@@ -39,6 +39,7 @@ in {
 
   home.file.".local/bin/gnu-rsync".source = ./scripts/gnu-rsync;
   home.file.".local/bin/backup-all".source = ./scripts/backup-all;
+  home.file.".local/bin/create_coretemp_sl".source = ./scripts/create_coretemp_sl;
 
   home.sessionVariables = {
     EDITOR = "nvim";

@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# for i in /sys/class/hwmon/hwmon*/temp*_input; do echo "$(<$(dirname $i)/name): $(cat ${i%_*}_label 2>/dev/null || echo $(basename ${i%_*})) $(readlink -f $i)"; done
+
+LINK_NAME="$HOME/.config/waybar/hwmon-path"
+
+for i in /sys/class/hwmon/hwmon*/temp*_input; do
+  el=$(cat ${i%_*}_label 2>/dev/null)
+  if [ "$el" = "Package id 0" ]; then
+    target="$(readlink -f $i)"
+    ln -sfv "$target" $LINK_NAME
+  fi
+done
+
+echo "Created" > ~/test_createtemp_sl
